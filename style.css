@@ -1,5 +1,5 @@
-body {
-  background-color: rgb(255, 255, 255);
-}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
