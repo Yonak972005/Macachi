@@ -1,0 +1,27 @@
+sass sass/style.scss style.css --watch
+         
+@use 'mixins';
+
+lujos (                            ++++++)
+tuercas
+tornillos
+tornillos(moto sporcket)
+chapeta
+esparragos
+tapones
+arandelas
+resortes
+pines
+lujos de cauchos (cauchosm, fuelles, posapies )
+cauchos internos (correas)
+herramientas 
+levas
+ejes
+parrilas
+muletas o patas
+defensas
+
+Colores (Rojo gris y blanco)
+oswal
+roboto
+fira sans
