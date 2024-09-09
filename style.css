@@ -3,3 +3,11 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+}
