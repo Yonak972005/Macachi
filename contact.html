@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Contacto - MACACHI</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="box">
+                <h1> <img src="" alt="Logo MACACHI"></h1>
+                <!-- barra de navegacion (opcional)
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                -->
+            </div>
+        </header>
+
+        <main class="contact">
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="example@gmail.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="311234567">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend id="test">¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radioemail"><input type="radio" name="contact" value="email" id="radioemail">Email</label>
+
+                    <label for="radiotelefono"><input type="radio" name="contact" value="telefono" id="radiotelefono">Teléfono</label>
+
+                    <label for="radiowhatsapp"><input type="radio" name="contact" value="whatsapp" id="radiowhatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option value="manana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </fieldset>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+
+        </main>
+
+        <footer> 
+            <img src="">
+            <p class="=copyright">© Copyright Macuchi, Tornillos, Clavos y Lujos. - 2024</p> 
+        </footer>
+
+    </body>
+
+</html>

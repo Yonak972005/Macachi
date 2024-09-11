@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Kumbh Sans", sans-serif;
+body{
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .top-header{
@@ -14,9 +11,84 @@ body {
 }
 
 .main-container{
-  width: 90%;
-  border: 1px solid black;
-  margin: auto;
+  border: 3px solid red;
+  position: relative;
+  /*Modificar al finalizar pagina*/
+  height: 2000px;
+  /*Modificar al finalizar pagina*/
+  width: 100%;
+}
+
+.header{
+background-color: rgb(34, 34, 34) ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+    .header_menu{
+    padding: 12px;
+    width: 120px;
+    height: 120px;
+  }
+    .header_logo{
+    font-size: 80px;
+    font-weight: 900;
+    color: #646464;
+  }
+  .header_cart{
+    padding: 15px;
+  }
+}
+
+.navbar{
+  display: none;
+  font-size: 200px;
+}
+
+.navbar_links{
+  font-size: 50px;
+}
+
+.modal-navbar_background{
+  background-color: hsl(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-navbar{
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  padding: 10%;
+
+    .modal-navbar_items{
+    color: #646464;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    list-style:none;
+    }
+
+    .navbar_links{
+    text-decoration: none;
+    color: black;
+    font-weight: 700px;
+    font-size: 400%;
+
+
+    }
+
+}
+
+
+
+
+.sub-header{
+  display: none;
 }
 
 @media(min-width:1000px){
@@ -34,6 +106,14 @@ body {
     padding-left: 3%;
     padding-bottom: 5px;
     padding-top: 5px;
+  }
+
+  .header_menu{
+    display: none;
+  }
+
+  .navbar{
+    display: flex;
   }
 
 }
