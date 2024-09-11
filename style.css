@@ -10,24 +10,31 @@ body {
 }
 
 .top-header{
-  background-color: rgb(34, 34, 34);
-}
-
-.top-header h4{
-  color: rgb(187, 187, 187);
-  padding-left: 3%;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  display: none;
 }
 
 .main-container{
   width: 90%;
   border: 1px solid black;
   margin: auto;
-
 }
-@media(min-width:1300px){
 
+@media(min-width:1000px){
+  .main-container{
+    width: 85%;
+  }
+
+  .top-header{
+    display: flex;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  .top-header h4{
+    color: rgb(187, 187, 187);
+    padding-left: 3%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
 
 }
 
