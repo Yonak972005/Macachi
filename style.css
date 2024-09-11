@@ -11,11 +11,11 @@ body{
 }
 
 .main-container{
-  position: relative;
+  display: relative;
   /*Modificar al finalizar pagina*/
   height: 2000px;
   /*Modificar al finalizar pagina*/
-  width: 100%;
+  width: auto;
 }
 
 .header{
@@ -47,7 +47,7 @@ justify-content: space-between;
 }
 
 .modal-navbar_background{
-  display: none;
+
   background-color: hsl(0, 0%, 0%, 0.5);
   position: absolute;
   top: 0;
@@ -63,8 +63,8 @@ justify-content: space-between;
 
   .modal-navbar_close{
     width: 8%;
-    padding-top: 3%;
-    padding-left: 3%;
+    padding-top: 4%;
+    padding-left: 4%;
     height: 2.5%;
     width: auto;
   }
@@ -88,21 +88,18 @@ justify-content: space-between;
     }
 
     .modal-navbar_items li{
-      box-shadow: rgba(0, 0, 0, 0.062) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    
+      margin-left: 5%;
+      margin-right: 5%;
+      box-shadow: 0px 87px 56px -65px rgba(207,62,207,1);
     }
 }
 
 .mainpart {
   display: flex;
+  height: 15%;
+  width: 10%;
+  margin: auto;
 }
-
-
-
-
-
-
-
-
 
 
 
