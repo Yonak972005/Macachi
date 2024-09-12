@@ -1,155 +1,171 @@
 
-body{
+body {
   font-family: "Signika", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-
 }
 
-.top-header{
+.top-header {
   display: none;
 }
 
-.main-container{
-  display: relative;
-  /*Modificar al finalizar pagina*/
+.top-header h4 {
+  background-color: transparent !important;
+}
+
+
+/* Main container */
+.main-container {
+  position: relative;
   height: 2000px;
-  /*Modificar al finalizar pagina*/
   width: auto;
 }
 
-.header{
-background-color: rgb(34, 34, 34) ;
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-    .header_menu{
-    display: flex;
-    padding: 12px;
-    width: 120px;
-    height: 120px;
-    }
-
-    .header_logo{
-    font-size: 80px;
-    font-weight: 900;
-    color: #646464;
-    }
-
-    .header_cart{
-    padding: 15px;
-    }
+/* Header */
+.header {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar{
+.header_menu {
+  display: flex;
+  padding: 12px;
+  width: 120px;
+  height: 120px;
+}
+
+.header_logo {
+  font-size: 80px;
+  font-weight: 900;
+  color: #646464;
+}
+
+.header_cart {
+  padding: 15px;
+}
+
+.navbar {
   display: none;
 }
 
-.modal-navbar_background{
+/* Fondo modal-navbar */
+.modal-navbar_background {
   display: none;
-  background-color: hsl(0, 0%, 0%, 0.5);
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999;
 }
 
-.modal-navbar{
+/* Modal navbar (menú deslizante) */
+.modal-navbar {
   background-color: white;
   width: 70%;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+}
 
-  .modal-navbar_close{
-    width: 8%;
-    padding-top: 4%;
-    padding-left: 4%;
-    height: 2.5%;
-    width: auto;
-  }
+/* Animación para abrir el menú */
+.modal-navbar.open {
+  left: 0;
+}
 
-    .modal-navbar_items{
-    color: #646464;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30%;
-    list-style:none;
-    padding-top: 10%;
-    }
+.modal-navbar_close {
+  width: auto;
+  height: 2.5%;
+  padding-top: 4%;
+  padding-left: 4%;
+}
 
-    .navbar_links{
-    text-decoration: none;
-    color: black;
-    font-weight:700;
-    font-size:400%;
-    padding-left: 10%;
-    }
+.modal-navbar_items {
+  color: #646464;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  list-style: none;
+  padding-top: 10%;
+}
 
-    .modal-navbar_items li{
-      margin-left: 5%;
-      margin-right: 5%;
-      
-    }
-} 
+.navbar_links {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 400%;
+  padding-left: 10%;
+}
 
+.modal-navbar_items li {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-
-@media screen and (min-width:1000px){
-  .main-container{
+/* Responsivo */
+@media screen and (min-width: 1000px) {
+  .main-container {
     width: 100%;
     margin: auto;
-
   }
 
-  .top-header{
+  .top-header {
     display: flex;
     background-color: rgb(22, 22, 22);
+    align-items: center;
   }
-  
-  .top-header h4{
+
+  .top-header h4 {
     color: rgb(228, 20, 41);
     padding-left: 3%;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin: 0;
+    background-color: transparent;
   }
-  
-  .header{
-    background-color: rgb(34, 34, 34) ;
+
+  .header {
+    background-color: rgb(34, 34, 34);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-  .header_menu{
+  }
+
+  .header_menu {
     display: none;
   }
 
-  .header_logo{
+  .header_logo {
     color: #ffffff;
     font-size: 35px;
-    align-items: center;
     font-weight: 900;
     padding-left: 8%;
-    }
+  }
 
-    .header_cart{
+  .header_cart {
     width: 20px;
     height: auto;
-    padding-right:4%;
+    padding-right: 4%;
     padding-top: 1.5%;
     color: #ffffff;
-    }
+  }
 
-    .mainpart{
-      display: none;
-    }
+  .mainpart {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-    .navbar{
+  .navbar {
     display: none;
-    }
-
   }
 }
 
