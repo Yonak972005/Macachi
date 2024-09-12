@@ -15,36 +15,30 @@ body {
 }
 
 
-/* Main container */
-.main-container {
-  position: relative;
-  height: 2000px;
-  width: auto;
-}
-
 /* Header */
 .header {
   background-color: rgb(34, 34, 34);
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .header_menu {
   display: flex;
-  padding: 12px;
-  width: 120px;
-  height: 120px;
+  height: 50px;
+  padding-left: 1%;
 }
 
 .header_logo {
-  font-size: 80px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 400;
   color: #646464;
 }
 
 .header_cart {
-  padding: 15px;
+  height: 30px;
+  padding-right: 2%;
 }
 
 .navbar {
@@ -65,7 +59,7 @@ body {
 
 /* Modal navbar (menú deslizante) */
 .modal-navbar {
-  background-color: white;
+  background-color: rgb(34, 34, 34);
   width: 70%;
   height: 100%;
   position: fixed;
@@ -82,7 +76,7 @@ body {
 
 .modal-navbar_close {
   width: auto;
-  height: 2.5%;
+  height: 3.5%;
   padding-top: 4%;
   padding-left: 4%;
 }
@@ -99,9 +93,9 @@ body {
 
 .navbar_links {
   text-decoration: none;
-  color: black;
-  font-weight: 700;
-  font-size: 400%;
+  color :#646464;
+  font-weight: 600;
+  font-size: 200%;
   padding-left: 10%;
 }
 
@@ -110,8 +104,15 @@ body {
   margin-right: 5%;
 }
 
+.mainpart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 /* Responsivo */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .main-container {
     width: 100%;
     margin: auto;
