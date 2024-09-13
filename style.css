@@ -23,6 +23,9 @@ body {
   justify-content: space-between;
 
 }
+.header_icon{
+  display: none;
+}
 
 .header_menu {
   display: flex;
@@ -39,6 +42,10 @@ body {
 .header_cart {
   height: 30px;
   padding-right: 2%;
+}
+
+.header_cart span{
+  display: none;
 }
 
 .navbar {
@@ -102,6 +109,9 @@ body {
 .modal-navbar_items li {
   margin-left: 5%;
   margin-right: 5%;
+}
+.header_search{
+  display: none;
 }
 
 .mainpart {
@@ -173,6 +183,11 @@ body {
     cursor: pointer;
     scale: 1.1;
   }
+
+  .header_cart span{
+    display: flex;
+  }
+
   .navbar {
     display: none;
   }
@@ -198,6 +213,10 @@ body {
   .btn-search img{
     width: 30px;
     height: auto;
+  }
+
+  .btn-search img:hover{
+    scale: 1.1;
   }
 
   .search-form{
