@@ -113,11 +113,6 @@ body {
 
 /* Responsivo */
 @media screen and (min-width: 1200px) {
-  .main-container {
-    width: 100%;
-    margin: auto;
-  }
-
   .top-header {
     display: flex;
     background-color: rgb(22, 22, 22);
@@ -135,9 +130,22 @@ body {
 
   .header {
     background-color: rgb(34, 34, 34);
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .header_icon{
+    display: flex;
+    width: 70px;
+    height: auto;
+    padding-left: 10px;
+  }  
+
+  .header_icon:hover{
+    cursor: pointer;
+    scale: 1.2;
   }
 
   .header_menu {
@@ -148,26 +156,88 @@ body {
     color: #ffffff;
     font-size: 35px;
     font-weight: 900;
-    padding-left: 8%;
+  }
+
+  .header_logo:hover{
+    cursor: pointer;
   }
 
   .header_cart {
-    width: 20px;
+    width: 25px;
     height: auto;
-    padding-right: 4%;
-    padding-top: 1.5%;
+    padding-right: 2%;
     color: #ffffff;
   }
+
+  .header_cart:hover{
+    cursor: pointer;
+    scale: 1.1;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .header_search{
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  margin: auto;
+  align-items: center;
+  }
+
+  .btn-search{
+    background-color: #E41429;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1%;
+    cursor: pointer;
+  }
+
+  .btn-search img{
+    width: 30px;
+    height: auto;
+  }
+
+  .search-form{
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    background-color: rgb(34, 34, 34);
+    height: 4.4rem;
+    overflow: hidden;
+    width: 30%;
+    height: 20%;
+    margin-bottom: 1%;
+  }
+
+  .search-form input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 120%;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  .search-form input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+
 
   .mainpart {
     display: block;
     width: 100%;
     height: auto;
+
   }
 
-  .navbar {
-    display: none;
-  }
 }
 
 
