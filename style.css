@@ -36,15 +36,18 @@ body {
 .header_logo {
   font-size: 40px;
   font-weight: 400;
-  color: #646464;
+  color: #ffffff;
 }
 
 .header_cart {
   height: 30px;
-  padding-right: 2%;
+  padding: 5px;
 }
 
-.header_cart span{
+.text {
+  display: none;
+}
+.number {
   display: none;
 }
 
@@ -89,7 +92,6 @@ body {
 }
 
 .modal-navbar_items {
-  color: #646464;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,7 +102,7 @@ body {
 
 .navbar_links {
   text-decoration: none;
-  color :#646464;
+  color :#ffffff;
   font-weight: 600;
   font-size: 200%;
   padding-left: 10%;
@@ -182,6 +184,7 @@ body {
   .header_cart {
     width: 25px;
     height: auto;
+    color: #E41429;
   }
 
   .header_cart:hover{
@@ -190,12 +193,14 @@ body {
   }
 
   .text{
+    display: flex;
     color: #ffffff;
     margin: auto;
     padding: 5%;
   }
 
   .number{
+    display: flex;
     color: #ffffff;
     margin: auto;
   }
@@ -259,8 +264,6 @@ body {
   .search-form input::-webkit-search-cancel-button {
     appearance: none;
   }
-
-
 
   .mainpart {
     display: block;
