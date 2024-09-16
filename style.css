@@ -150,7 +150,8 @@ body {
     display: flex;
     width: 70px;
     height: auto;
-    padding-left: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
   }  
 
   .header_icon:hover{
@@ -172,11 +173,15 @@ body {
     cursor: pointer;
   }
 
+  .main_header_cart{
+    display: flex;
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+
   .header_cart {
     width: 25px;
     height: auto;
-    padding-right: 2%;
-    color: #ffffff;
   }
 
   .header_cart:hover{
@@ -184,8 +189,15 @@ body {
     scale: 1.1;
   }
 
-  .header_cart span{
-    display: flex;
+  .text{
+    color: #ffffff;
+    margin: auto;
+    padding: 5%;
+  }
+
+  .number{
+    color: #ffffff;
+    margin: auto;
   }
 
   .navbar {
