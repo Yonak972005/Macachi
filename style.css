@@ -122,6 +122,49 @@ body {
   height: auto;
 }
 
+.slider-frame {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+.icon_footer{
+  display: flex;
+  width: 35px;
+  height: auto;
+}
+
 
 /* Responsivo */
 @media screen and (min-width: 1200px) {
@@ -142,7 +185,7 @@ body {
 
   .header {
     background-color: rgb(34, 34, 34);
-    height: 60px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,9 +193,9 @@ body {
 
   .header_icon{
     display: flex;
-    width: 70px;
+    width: 60px;
     height: auto;
-    margin-top: 50px;
+    margin-top: 3%;
     margin-left: 30px;
   }  
 
@@ -177,7 +220,7 @@ body {
 
   .main_header_cart{
     display: flex;
-    margin-top: 3%;
+    margin-top: 3.5%;
     margin-right: 3%;
   }
 
@@ -223,7 +266,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 1%;
     cursor: pointer;
   }
 
@@ -248,7 +290,7 @@ body {
     overflow: hidden;
     width: 30%;
     height: 20%;
-    margin-bottom: 1%;
+    margin-bottom: 0.5%;
   }
 
   .search-form input {
@@ -269,8 +311,44 @@ body {
     display: block;
     width: 100%;
     height: auto;
-
   }
+  .slider-frame {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider-frame img {
+    width: 100%;
+  }
+  
+  @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+
 
 }
 
