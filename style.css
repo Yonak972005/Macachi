@@ -165,9 +165,11 @@ body {
   font-weight: 800;
 }
 .product-content{
-  padding: 0 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
 }
-.product-content{
+
+.products-container{
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
@@ -187,8 +189,6 @@ body {
 .btn-2{
   color: #000000;
 }
-
-
 
 .icon_footer{
   display: flex;
@@ -407,8 +407,9 @@ body {
   }
 
   .product-content{
-    grid-template-columns: repeat(3);
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
 }
