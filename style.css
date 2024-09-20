@@ -217,15 +217,15 @@ body {
 
   .header_icon{
     display: flex;
-    width: 60px;
+    width: 55px;
     height: auto;
-    margin-top: 3%;
-    margin-left: 30px;
+    margin: 2.0%;
+    margin-top: 5%;
   }  
 
   .header_icon:hover{
     cursor: pointer;
-    scale: 1.2;
+    scale: 1.1;
   }
 
   .header_menu {
@@ -238,13 +238,10 @@ body {
     font-weight: 900;
   }
 
-  .header_logo:hover{
-    cursor: pointer;
-  }
 
   .main_header_cart{
     display: flex;
-    margin-top: 3.5%;
+    margin-top: 2.5%;
     margin-right: 3%;
   }
 
