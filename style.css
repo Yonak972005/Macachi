@@ -155,6 +155,41 @@ body {
   100% {margin-left: -300%;}
 }
 
+.products-container h2{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-weight: 800;
+}
+.product-content{
+  padding: 0 30px 30px 30px;
+}
+.product-content{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.product{
+  border: 1px solid black;
+  margin-bottom: 8%;
+  border-radius: 30px;
+}
+.product img{
+  width: 100%;
+  border-radius: 30px;
+}
+.product-txt{
+  text-align: center;
+  border-top: 1px solid #000000;
+}
+.btn-2{
+  color: #000000;
+}
+
+
+
 .icon_footer{
   display: flex;
   width: 35px;
@@ -371,6 +406,10 @@ body {
     100% {margin-left: -300%;}
   }
 
+  .product-content{
+    grid-template-columns: repeat(3);
+    gap: 30px;
+  }
 
 }
 
