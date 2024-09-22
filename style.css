@@ -173,6 +173,7 @@ body {
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
+
 .product{
   border: 1px solid black;
   margin-bottom: 8%;
@@ -410,6 +411,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: center;
+  }
+  .product-content{
+    margin: auto;
+    width: 70%;
   }
 
 }
