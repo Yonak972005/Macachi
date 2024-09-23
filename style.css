@@ -176,7 +176,7 @@ body {
 
 .product{
   border-radius: 10px;
-  border: 1px solid #c7c7c7;
+  border: 1px solid #fa272744;
   margin-bottom: 8%;
 }
 .product:hover{
@@ -209,7 +209,7 @@ body {
   .top-header {
     display: flex;
     width: 100%;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(148, 36, 36);
     color: #ffffff;
     height: 30px;
   }
