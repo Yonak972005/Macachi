@@ -178,6 +178,7 @@ body {
   border-radius: 10px;
   border: 1px solid #fa272744;
   margin-bottom: 8%;
+  height: auto;
 }
 .product:hover{
   box-shadow: 0px 1px 20px -8px rgb(0, 0, 0);
@@ -190,9 +191,12 @@ body {
 
 .product-txt{
   text-align: center;
-  margin-top: 25px;
-
 }
+
+.product-txt h3{
+  margin-bottom: 10PX;
+}
+
 .btn-2{
   color: #000000;
 }
@@ -412,16 +416,24 @@ body {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
   }
-
   .product-content{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     align-items: center;
-  }
-  .product-content{
     margin: auto;
     width: 70%;
+  }
+
+  .product{
+    height: 100%;
+  }
+
+  .product-txt p{
+    font-size: 12PX;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
 }
