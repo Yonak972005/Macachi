@@ -213,7 +213,7 @@ body {
   .top-header {
     display: flex;
     width: 100%;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(40, 40, 40);
     color: #ffffff;
     height: 30px;
   }
