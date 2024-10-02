@@ -13,6 +13,7 @@ body {
 /* Header */
 .header {
   background-color: rgb(116, 116, 116);
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +38,7 @@ body {
 .header_cart {
   height: 30px;
   padding: 5px;
+  padding-right: 10px;
 }
 
 .text {
@@ -194,6 +196,7 @@ body {
 
 .product-txt{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .product-txt h3{
@@ -408,6 +411,10 @@ body {
     height: 100%;
   }
 
+  .product-txt{
+    margin-bottom: 0px;
+  }
+  
   .product-txt p{
     font-size: 15PX;
     margin-right: 5px;
