@@ -13,7 +13,6 @@ body {
 /* Header */
 .header {
   background-color: rgb(116, 116, 116);
-  height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,12 +111,6 @@ body {
 }
 .header_search{
   display: none;
-}
-
-.mainpart {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .slider-frame {
@@ -230,8 +223,231 @@ body {
   align-items: center;
 }
 
+/* Responsivo 1000 */
+@media screen and (min-width: 1000px) {
+  .top-header {
+    display: none;
+  }
+  
+  /* Header */
+  .header {
+    background-color: rgb(116, 116, 116);
+    display: flex;
+  }
+  
+  .header_icon{
+    display: none;
+  }
+  
+  .header_menu {
+    display: flex;
+    height: 70px;
+    padding-left: 1%;
+  }
+  
+  .header_logo {
+    font-size: 65px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .header_cart {
+    height:55px;
+    padding: 5px;
+    padding-right: 10px;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+  .number {
+    display: none;
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  /* Fondo modal-navbar */
+  .modal-navbar_background {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  
+  /* Modal navbar (menú deslizante) */
+  .modal-navbar {
+    background-color: rgb(58,58,58);
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* Animación para abrir el menú */
+  .modal-navbar.open {
+    left: 0;
+  }
+  
+  .modal-navbar_close {
+    width: auto;
+    height: 4%;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  
+  .modal-navbar_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    list-style: none;
+    padding-top: 10%;
+  }
+  
+  .navbar_links {
+    text-decoration: none;
+    color :#ffffff;
+    font-weight: 600;
+    font-size: 300%;
+    padding-left: 10%;
+  }
+  
+  .modal-navbar_items li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-/* Responsivo */
+  .header_search{
+    display: none;
+  }
+  
+  .slider-frame {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider-frame img {
+    width: 100%;
+  }
+  
+  @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+  
+  .products-container h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .product-content{
+    padding: 30px 30px 30px 30px;
+  }
+  
+  .products-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  
+  .product{
+    border-radius: 15px;
+    border: 1px solid #fa272744;
+    margin-bottom: 5%;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: auto;
+  }
+  
+  .product:hover{
+    box-shadow: 0px 1px 20px -8px rgb(0, 0, 0);
+  }
+  
+  .product img{
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .product-txt{
+    text-align: center;
+  }
+  
+  .product-txt p{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .product-txt h3{
+    margin-bottom: 10PX;
+  }
+  
+  .btn-2{
+    color: #000000;
+  }
+  
+  .footer{
+    display: flex;
+    background: rgb(116, 116, 116);
+    padding: 5px;
+  }
+  
+  .icon_footer{
+    display: flex;
+    width: 35px;
+    height: auto;
+  }
+  
+  .copyright{
+    padding-left: 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+}
+
+/* Responsivo 1200 */
 @media screen and (min-width: 1200px) {
   .top-header {
     display: flex;
