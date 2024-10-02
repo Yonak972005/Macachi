@@ -13,6 +13,7 @@ body {
 /* Header */
 .header {
   background-color: rgb(116, 116, 116);
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,6 +110,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 .header_search{
   display: none;
 }
@@ -223,7 +225,7 @@ body {
   align-items: center;
 }
 
-/* Responsivo 1000 */
+/* Responsivo 1000px*/
 @media screen and (min-width: 1000px) {
   .top-header {
     display: none;
@@ -232,7 +234,10 @@ body {
   /* Header */
   .header {
     background-color: rgb(116, 116, 116);
+    height: 90px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .header_icon{
@@ -246,13 +251,13 @@ body {
   }
   
   .header_logo {
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 400;
     color: #ffffff;
   }
   
   .header_cart {
-    height:55px;
+    height: 60px;
     padding: 5px;
     padding-right: 10px;
   }
@@ -268,105 +273,67 @@ body {
   .navbar {
     display: none;
   }
-  
+
   /* Fondo modal-navbar */
   .modal-navbar_background {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
   }
-  
+
   /* Modal navbar (menú deslizante) */
   .modal-navbar {
-    background-color: rgb(58,58,58);
-    width: 70%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    z-index: 1000;
-    transition: left 0.3s ease-in-out;
+  background-color: rgb(58,58,58);
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
   }
-  
+
   /* Animación para abrir el menú */
   .modal-navbar.open {
-    left: 0;
+  left: 0;
   }
-  
+
   .modal-navbar_close {
-    width: auto;
-    height: 4%;
-    padding-top: 5%;
-    padding-left: 5%;
+  width: auto;
+  height: 4%;
+  padding-top: 5%;
+  padding-left: 5%;
   }
-  
+
   .modal-navbar_items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30%;
-    list-style: none;
-    padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  list-style: none;
+  padding-top: 10%;
   }
-  
+
   .navbar_links {
-    text-decoration: none;
-    color :#ffffff;
-    font-weight: 600;
-    font-size: 300%;
-    padding-left: 10%;
+  text-decoration: none;
+  color :#ffffff;
+  font-weight: 600;
+  font-size: 300%;
+  padding-left: 10%;
   }
-  
+
   .modal-navbar_items li {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   }
 
   .header_search{
     display: none;
-  }
-  
-  .slider-frame {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-  }
-  
-  .slider-frame li {
-    width: 100%;
-    list-style: none;
-  }
-  
-  .slider-frame img {
-    width: 100%;
-  }
-  
-  @keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-    
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
   }
   
   .products-container h2{
@@ -390,11 +357,9 @@ body {
   }
   
   .product{
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid #fa272744;
-    margin-bottom: 5%;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-bottom: 8%;
     height: auto;
   }
   
@@ -405,8 +370,8 @@ body {
   .product img{
     width: 80%;
     border-radius: 10px 10px 0 0;
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   
   .product-txt{
@@ -416,9 +381,11 @@ body {
   .product-txt p{
     text-align: center;
     margin-bottom: 40px;
+    font-size: 30px;
   }
-  
+
   .product-txt h3{
+    font-size: 250%;
     margin-bottom: 10PX;
   }
   
@@ -444,10 +411,9 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  
 }
 
-/* Responsivo 1200 */
+/* Responsivo 1200px*/
 @media screen and (min-width: 1200px) {
   .top-header {
     display: flex;
@@ -611,12 +577,6 @@ body {
     appearance: none;
   }
 
-  .mainpart {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   .product-content{
     position: relative;
     display: grid;
@@ -630,15 +590,27 @@ body {
   .product{
     height: 100%;
   }
-
+  
+  .product img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  
   .product-txt{
     margin-bottom: 0px;
   }
-  
+
   .product-txt p{
     font-size: 15PX;
     margin-right: 5px;
     margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  .product-txt h3{
+    font-size: 100%;
     margin-bottom: 0px;
   }
 

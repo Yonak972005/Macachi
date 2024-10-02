@@ -13,6 +13,7 @@ body {
 /* Header */
 .header {
   background-color: rgb(116, 116, 116);
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +38,7 @@ body {
 .header_cart {
   height: 30px;
   padding: 5px;
+  padding-right: 10px;
 }
 
 .text {
@@ -108,14 +110,9 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 .header_search{
   display: none;
-}
-
-.mainpart {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .slider-frame {
@@ -196,6 +193,11 @@ body {
   text-align: center;
 }
 
+.product-txt p{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .product-txt h3{
   margin-bottom: 10PX;
 }
@@ -223,8 +225,195 @@ body {
   align-items: center;
 }
 
+/* Responsivo 1000px*/
+@media screen and (min-width: 1000px) {
+  .top-header {
+    display: none;
+  }
+  
+  /* Header */
+  .header {
+    background-color: rgb(116, 116, 116);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header_icon{
+    display: none;
+  }
+  
+  .header_menu {
+    display: flex;
+    height: 70px;
+    padding-left: 1%;
+  }
+  
+  .header_logo {
+    font-size: 60px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .header_cart {
+    height: 60px;
+    padding: 5px;
+    padding-right: 10px;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+  .number {
+    display: none;
+  }
+  
+  .navbar {
+    display: none;
+  }
 
-/* Responsivo */
+  /* Fondo modal-navbar */
+  .modal-navbar_background {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  }
+
+  /* Modal navbar (menú deslizante) */
+  .modal-navbar {
+  background-color: rgb(58,58,58);
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+  }
+
+  /* Animación para abrir el menú */
+  .modal-navbar.open {
+  left: 0;
+  }
+
+  .modal-navbar_close {
+  width: auto;
+  height: 4%;
+  padding-top: 5%;
+  padding-left: 5%;
+  }
+
+  .modal-navbar_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  list-style: none;
+  padding-top: 10%;
+  }
+
+  .navbar_links {
+  text-decoration: none;
+  color :#ffffff;
+  font-weight: 600;
+  font-size: 300%;
+  padding-left: 10%;
+  }
+
+  .modal-navbar_items li {
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+  .header_search{
+    display: none;
+  }
+  
+  .products-container h2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .product-content{
+    padding: 30px 30px 30px 30px;
+  }
+  
+  .products-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  
+  .product{
+    border-radius: 10px;
+    border: 1px solid #fa272744;
+    margin-bottom: 8%;
+    height: auto;
+  }
+  
+  .product:hover{
+    box-shadow: 0px 1px 20px -8px rgb(0, 0, 0);
+  }
+  
+  .product img{
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .product-txt{
+    text-align: center;
+  }
+  
+  .product-txt p{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .product-txt h3{
+    font-size: 250%;
+    margin-bottom: 10PX;
+  }
+  
+  .btn-2{
+    color: #000000;
+  }
+  
+  .footer{
+    display: flex;
+    background: rgb(116, 116, 116);
+    padding: 5px;
+  }
+  
+  .icon_footer{
+    display: flex;
+    width: 35px;
+    height: auto;
+  }
+  
+  .copyright{
+    padding-left: 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Responsivo 1200px*/
 @media screen and (min-width: 1200px) {
   .top-header {
     display: flex;
@@ -388,12 +577,6 @@ body {
     appearance: none;
   }
 
-  .mainpart {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   .product-content{
     position: relative;
     display: grid;
@@ -407,11 +590,28 @@ body {
   .product{
     height: 100%;
   }
+  
+  .product img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  
+  .product-txt{
+    margin-bottom: 0px;
+  }
 
   .product-txt p{
     font-size: 15PX;
     margin-right: 5px;
     margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  .product-txt h3{
+    font-size: 100%;
+    margin-bottom: 0px;
   }
 
 }
