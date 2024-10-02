@@ -13,7 +13,7 @@ body {
 /* Header */
 .header {
   background-color: rgb(116, 116, 116);
-  height: 50px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,7 +196,11 @@ body {
 
 .product-txt{
   text-align: center;
-  margin-bottom: 20px;
+}
+
+.product-txt p{
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .product-txt h3{
@@ -419,6 +423,7 @@ body {
     font-size: 15PX;
     margin-right: 5px;
     margin-left: 5px;
+    margin-bottom: 0px;
   }
 
 }
