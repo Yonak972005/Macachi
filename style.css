@@ -381,14 +381,16 @@ body {
   .product-txt p{
     text-align: center;
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: 35px;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .product-txt h3{
-    font-size: 250%;
-    margin-bottom: 10PX;
+    font-size: 300%;
+    margin-bottom: 25px;
   }
-  
+
   .btn-2{
     color: #000000;
   }
@@ -610,8 +612,8 @@ body {
   }
 
   .product-txt h3{
-    font-size: 100%;
-    margin-bottom: 0px;
+    font-size: 130%;
+    margin-bottom: 10px;
   }
 
 }
