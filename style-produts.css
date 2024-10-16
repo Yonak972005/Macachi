@@ -4,6 +4,8 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  position: relative;
+  min-height: 100vh;
 }
 
 .top-header {
@@ -209,7 +211,6 @@ body {
 .footer{
   display: flex;
   background: rgb(116, 116, 116);
-  padding: 5px;
 }
 
 .icon_footer{
@@ -398,7 +399,9 @@ body {
   .footer{
     display: flex;
     background: rgb(116, 116, 116);
-    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   
   .icon_footer{
@@ -413,6 +416,7 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  
 }
 
 /* Responsivo 1200px*/
