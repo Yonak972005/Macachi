@@ -3,6 +3,8 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  position: relative;
+  min-height: 100vh;
 }
 
 .top-header {
@@ -208,7 +210,6 @@ body {
 .footer{
   display: flex;
   background: rgb(116, 116, 116);
-  padding: 10px;
 }
 
 .icon_footer{
@@ -393,7 +394,28 @@ body {
   .btn-2{
     color: #000000;
   }
-
+  
+  .footer{
+    display: flex;
+    background: rgb(116, 116, 116);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .icon_footer{
+    display: flex;
+    width: 35px;
+    height: auto;
+  }
+  
+  .copyright{
+    padding-left: 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 }
 
 /* Responsivo 1200px*/
