@@ -582,6 +582,26 @@ body {
     appearance: none;
   }
 
+  .m-v{
+    display: flex;
+    background-color: rgb(116, 116, 116);
+    margin-top: -3px;
+
+  }
+
+  .mision{
+    /*border: solid 1px red;*/
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .vision{
+    /*border: solid 1px blue;*/
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+
   .product-content{
     position: relative;
     display: grid;
