@@ -203,6 +203,47 @@ body {
   margin-bottom: 10PX;
 }
 
+.m-v{
+  background-color: rgb(116, 116, 116);
+  margin-top: -3px;
+  padding: 10px;
+}
+
+
+.mision{
+  border: solid 1px rgba(0, 0, 0, 0.40);
+  border-radius: 10px;
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 3%;
+
+}
+
+.titulo_mision{
+  text-align: center;
+  color: #E41429;
+  font-size: 35px;
+  padding: 2%;
+  
+}
+
+.vision{
+  border: solid 1px rgba(0, 0, 0, 0.40);
+  border-radius: 10px;
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 3%;
+}
+
+.titulo_vision{
+  text-align: center;
+  color: #E41429;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 2%;
+}
+
+
 .btn-2{
   color: #000000;
 }
@@ -586,21 +627,42 @@ body {
     display: flex;
     background-color: rgb(116, 116, 116);
     margin-top: -3px;
-
+    padding: 0px;
   }
 
   .mision{
-    /*border: solid 1px red;*/
-    padding-left:5%;
-    padding-right: 5%;
+    border: solid 1px rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
+
+  }
+
+  .titulo_mision{
+    text-align: center;
+    color: #E41429;
+    font-size: 35px;
+    padding: 2%;
+    
   }
 
   .vision{
-    /*border: solid 1px blue;*/
-    padding-left:5%;
-    padding-right: 5%;
+    border: solid 1px rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
   }
 
+  .titulo_vision{
+    text-align: center;
+    color: #E41429;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 2%;
+  }
+  
 
   .product-content{
     position: relative;
