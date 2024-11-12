@@ -34,7 +34,7 @@ body {
 .header_logo {
   font-size: 40px;
   font-weight: 400;
-  color: #ffffff;
+  color: #000000;
 }
 
 .header_cart {
@@ -171,6 +171,7 @@ body {
 
 .products-container{
   display: grid;
+  background-color: #000000;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
@@ -193,6 +194,7 @@ body {
 
 .product-txt{
   text-align: center;
+  color: white;
 }
 
 .product-txt p{
@@ -203,6 +205,49 @@ body {
 .product-txt h3{
   margin-bottom: 10PX;
 }
+
+.m-v{
+  background-color: rgb(0, 0, 0);
+  margin-top: -3px;
+  padding: 10px;
+}
+
+
+.mision{
+  border: solid 1px #ff0019;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 3%;
+
+}
+
+.titulo_mision{
+  text-align: center;
+  color: #ff0019;
+  font-size: 35px;
+  padding: 2%;
+  
+}
+
+.vision{
+  border: solid 1px #ff0019;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 3%;
+}
+
+.titulo_vision{
+  text-align: center;
+  color: #ff0019;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 2%;
+}
+
 
 .btn-2{
   color: #000000;
@@ -226,205 +271,13 @@ body {
   align-items: center;
 }
 
-/* Responsivo 1000px*/
+
+/* Responsivo 1000*/
 @media screen and (min-width: 1000px) {
   .top-header {
-    display: none;
-  }
-  
-  /* Header */
-  .header {
-    background-color: rgb(116, 116, 116);
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header_icon{
-    display: none;
-  }
-  
-  .header_menu {
-    display: flex;
-    height: 70px;
-    padding-left: 1%;
-  }
-  
-  .header_logo {
-    font-size: 60px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .header_cart {
-    height: 60px;
-    padding: 5px;
-    padding-right: 10px;
-  }
-  
-  .text {
-    display: none;
-  }
-  
-  .number {
-    display: none;
-  }
-  
-  .navbar {
-    display: none;
-  }
-
-  /* Fondo modal-navbar */
-  .modal-navbar_background {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  }
-
-  /* Modal navbar (menú deslizante) */
-  .modal-navbar {
-  background-color: rgb(58,58,58);
-  width: 70%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  z-index: 1000;
-  transition: left 0.3s ease-in-out;
-  }
-
-  /* Animación para abrir el menú */
-  .modal-navbar.open {
-  left: 0;
-  }
-
-  .modal-navbar_close {
-  width: auto;
-  height: 4%;
-  padding-top: 5%;
-  padding-left: 5%;
-  }
-
-  .modal-navbar_items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 30%;
-  list-style: none;
-  padding-top: 10%;
-  }
-
-  .navbar_links {
-  text-decoration: none;
-  color :#ffffff;
-  font-weight: 600;
-  font-size: 300%;
-  padding-left: 10%;
-  }
-
-  .modal-navbar_items li {
-  margin-left: 5%;
-  margin-right: 5%;
-  }
-
-  .header_search{
-    display: none;
-  }
-  
-  .products-container h2{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 5%;
-    font-size: 30px;
-    font-weight: 800;
-  }
-  
-  .product-content{
-    padding: 30px 30px 30px 30px;
-  }
-  
-  .products-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-  }
-  
-  .product{
-    border-radius: 10px;
-    border: 1px solid #fa272744;
-    margin-bottom: 8%;
-    height: auto;
-  }
-  
-  .product:hover{
-    box-shadow: 0px 1px 20px -8px rgb(0, 0, 0);
-  }
-  
-  .product img{
-    width: 80%;
-    border-radius: 10px 10px 0 0;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  .product-txt{
-    text-align: center;
-  }
-  
-  .product-txt p{
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 35px;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  .product-txt h3{
-    font-size: 300%;
-    margin-bottom: 25px;
-  }
-
-  .btn-2{
-    color: #000000;
-  }
-  
-  .footer{
-    display: flex;
-    background: rgb(116, 116, 116);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .icon_footer{
-    display: flex;
-    width: 35px;
-    height: auto;
-  }
-  
-  .copyright{
-    padding-left: 15px;
-    padding-top: 10px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-}
-
-/* Responsivo 1200px*/
-@media screen and (min-width: 1200px) {
-  .top-header {
     display: flex;
     width: 100%;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
     height: 30px;
   }
@@ -583,6 +436,47 @@ body {
     appearance: none;
   }
 
+  .m-v{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin-top: -3px;
+    padding: 0px;
+  }
+
+  .mision{
+    border: solid 1px rgb(252, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
+
+  }
+
+  .titulo_mision{
+    text-align: center;
+    color: #E41429;
+    font-size: 35px;
+    padding: 2%;
+    
+  }
+
+  .vision{
+    border:solid 1px rgb(252, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
+  }
+
+  .titulo_vision{
+    text-align: center;
+    color: #E41429;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 2%;
+  }
+  
+
   .product-content{
     position: relative;
     display: grid;
@@ -621,6 +515,3 @@ body {
   }
 
 }
-
-
-
