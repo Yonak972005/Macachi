@@ -6,6 +6,7 @@ body {
   font-style: normal;
   position: relative;
   min-height: 100vh;
+  background-color: black;
 }
 
 .top-header {
@@ -21,7 +22,7 @@ body {
   justify-content: space-between;
 }
 
-.header_icon{
+.header_icon {
   display: none;
 }
 
@@ -34,7 +35,7 @@ body {
 .header_logo {
   font-size: 40px;
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
 }
 
 .header_cart {
@@ -113,7 +114,7 @@ body {
   margin-right: 5%;
 }
 
-.header_search{
+.header_search {
   display: none;
 }
 
@@ -155,7 +156,7 @@ body {
   100% {margin-left: -300%;}
 }
 
-.products-container h2{
+.products-container h2 {
   width: 100%;
   height: auto;
   text-align: center;
@@ -165,106 +166,63 @@ body {
   font-weight: 800;
 }
 
-.product-content{
+.product-content {
   padding: 30px 30px 30px 30px;
 }
 
-.products-container{
+.products-container {
   display: grid;
   background-color: #000000;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
 
-.product{
+.product {
   border-radius: 10px;
-  border: 1px solid #fa272744;
+  border: 1px solid #ff0000;
   margin-bottom: 8%;
   height: auto;
 }
 
-.product:hover{
+.product:hover {
   box-shadow: 0px 1px 20px -8px rgb(0, 0, 0);
 }
 
-.product img{
+.product img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-.product-txt{
+.product-txt {
   text-align: center;
   color: white;
 }
 
-.product-txt p{
+.product-txt p {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.product-txt h3{
+.product-txt h3 {
   margin-bottom: 10PX;
 }
 
-.m-v{
-  background-color: rgb(0, 0, 0);
-  margin-top: -3px;
-  padding: 10px;
-}
-
-
-.mision{
-  border: solid 1px #ff0019;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  margin: 2%;
-  padding-bottom: 3%;
-
-}
-
-.titulo_mision{
-  text-align: center;
-  color: #ff0019;
-  font-size: 35px;
-  padding: 2%;
-  
-}
-
-.vision{
-  border: solid 1px #ff0019;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  margin: 2%;
-  padding-bottom: 3%;
-}
-
-.titulo_vision{
-  text-align: center;
-  color: #ff0019;
-  font-size: 35px;
-  font-weight: 700;
-  padding: 2%;
-}
-
-
-.btn-2{
+.btn-2 {
   color: #000000;
 }
 
-.footer{
+.footer {
   display: flex;
   background: rgb(116, 116, 116);
 }
 
-.icon_footer{
+.icon_footer {
   display: flex;
   width: 35px;
   height: auto;
 }
 
-.copyright{
+.copyright {
   padding-left: 15px;
   padding-top: 10px;
   justify-content: space-between;
@@ -282,36 +240,36 @@ body {
     height: 30px;
   }
 
-  .flex{
+  .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .left{
+  .left {
     margin-left: 2%;
   }
 
-  .top_whatsapp img{
+  .top_whatsapp img {
     width: 15px;
     height: auto;
   }
 
-  .whatsapp{
+  .whatsapp {
     margin-right: 50px;
   }
 
-  .top_call img{
+  .top_call img {
     width: 15px;
     height: auto;
     
   }
 
-  .right{
+  .right {
     margin-right: 2%;
   }
 
-  .top_envios img{
+  .top_envios img {
     width: 15px;
     height: auto;
   }
@@ -324,7 +282,7 @@ body {
     justify-content: space-between;
   }
 
-  .header_icon{
+  .header_icon {
     display: flex;
     width: 55px;
     height: auto;
@@ -332,7 +290,7 @@ body {
     margin-top: 4.3%;
   }  
 
-  .header_icon:hover{
+  .header_icon:hover {
     cursor: pointer;
     scale: 1.1;
   }
@@ -347,7 +305,7 @@ body {
     font-weight: 900;
   }
 
-  .main_header_cart{
+  .main_header_cart {
     display: flex;
     margin-top: 2.5%;
     margin-right: 3%;
@@ -356,22 +314,22 @@ body {
   .header_cart {
     width: 25px;
     height: auto;
-    color: #E41429;
+    color: #ff0000;
   }
 
-  .header_cart:hover{
+  .header_cart:hover {
     cursor: pointer;
     scale: 1.1;
   }
 
-  .text{
+  .text {
     display: flex;
     color: #ffffff;
     margin: auto;
     padding: 5%;
   }
 
-  .number{
+  .number {
     display: flex;
     color: #ffffff;
     margin: auto;
@@ -381,15 +339,15 @@ body {
     display: none;
   }
 
-  .header_search{
+  .header_search {
   display: flex;
   background-color: rgb(116, 116, 116);
   margin: auto;
   align-items: center;
   }
 
-  .btn-search{
-    background-color: #E41429;
+  .btn-search {
+    background-color: #ff0000;
     border: none;
     display: flex;
     align-items: center;
@@ -398,16 +356,16 @@ body {
     cursor: pointer;
   }
 
-  .btn-search img{
+  .btn-search img {
     width: 30px;
     height: auto;
   }
 
-  .btn-search img:hover{
+  .btn-search img:hover {
     scale: 1.1;
   }
 
-  .search-form{
+  .search-form {
     position: relative;
     display: flex;
     margin: auto;
@@ -436,48 +394,7 @@ body {
     appearance: none;
   }
 
-  .m-v{
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    margin-top: -3px;
-    padding: 0px;
-  }
-
-  .mision{
-    border: solid 1px rgb(252, 0, 0);
-    border-radius: 10px;
-    text-align: center;
-    margin: 2%;
-    padding-bottom: 4%;
-
-  }
-
-  .titulo_mision{
-    text-align: center;
-    color: #E41429;
-    font-size: 35px;
-    padding: 2%;
-    
-  }
-
-  .vision{
-    border:solid 1px rgb(252, 0, 0);
-    border-radius: 10px;
-    text-align: center;
-    margin: 2%;
-    padding-bottom: 4%;
-  }
-
-  .titulo_vision{
-    text-align: center;
-    color: #E41429;
-    font-size: 35px;
-    font-weight: 700;
-    padding: 2%;
-  }
-  
-
-  .product-content{
+  .product-content {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -487,31 +404,39 @@ body {
     width: 70%;
   }
 
-  .product{
+  .product {
     height: 100%;
   }
   
-  .product img{
+  .product img {
     width: 100%;
     border-radius: 10px 10px 0 0;
     padding-left: 0%;
     padding-right: 0%;
   }
   
-  .product-txt{
+  .product-txt {
     margin-bottom: 0px;
   }
 
-  .product-txt p{
+  .product-txt p {
     font-size: 15PX;
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
   }
 
-  .product-txt h3{
+  .product-txt h3 {
     font-size: 130%;
     margin-bottom: 10px;
+  }
+
+  .footer {
+    display: flex;
+    background-color: rgb(116, 116, 116);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
 }

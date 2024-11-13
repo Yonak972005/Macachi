@@ -33,8 +33,9 @@ body {
 .header_logo {
   font-size: 40px;
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
 }
+
 
 .header_cart {
   height: 30px;
@@ -177,7 +178,7 @@ body {
 
 .product{
   border-radius: 10px;
-  border: 1px solid #fa272744;
+  border: 1px solid #ff0000;
   margin-bottom: 8%;
   height: auto;
 }
@@ -213,7 +214,7 @@ body {
 
 
 .mision{
-  border: solid 1px #ff0019;
+  border: solid 1px #ff0000;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -224,14 +225,14 @@ body {
 
 .titulo_mision{
   text-align: center;
-  color: #ff0019;
+  color: #ff0000;
   font-size: 35px;
   padding: 2%;
   
 }
 
 .vision{
-  border: solid 1px #ff0019;
+  border: solid 1px #ff0000;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -241,7 +242,7 @@ body {
 
 .titulo_vision{
   text-align: center;
-  color: #ff0019;
+  color: #ff0000;
   font-size: 35px;
   font-weight: 700;
   padding: 2%;
@@ -277,7 +278,7 @@ body {
     display: flex;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    color: #ffffff;
+    color: #000000;
     height: 30px;
   }
 
@@ -355,7 +356,7 @@ body {
   .header_cart {
     width: 25px;
     height: auto;
-    color: #E41429;
+    color: #ff0000;
   }
 
   .header_cart:hover{
@@ -388,7 +389,7 @@ body {
   }
 
   .btn-search{
-    background-color: #E41429;
+    background-color: #ff0000;
     border: none;
     display: flex;
     align-items: center;
@@ -443,7 +444,7 @@ body {
   }
 
   .mision{
-    border: solid 1px rgb(252, 0, 0);
+    border: solid 1px #ff0000;
     border-radius: 10px;
     text-align: center;
     margin: 2%;
@@ -453,14 +454,14 @@ body {
 
   .titulo_mision{
     text-align: center;
-    color: #E41429;
+    color: #ff0000;
     font-size: 35px;
     padding: 2%;
     
   }
 
   .vision{
-    border:solid 1px rgb(252, 0, 0);
+    border:solid 1px #ff0000;
     border-radius: 10px;
     text-align: center;
     margin: 2%;
@@ -469,7 +470,7 @@ body {
 
   .titulo_vision{
     text-align: center;
-    color: #E41429;
+    color: #ff0000;
     font-size: 35px;
     font-weight: 700;
     padding: 2%;
