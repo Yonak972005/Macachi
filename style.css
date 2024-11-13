@@ -192,7 +192,6 @@ body {
   border-radius: 10px 10px 0 0;
   background-image: url(images/Marca.png);
   user-select: none;  
-  pointer-events: none;
 }
 
 .product-txt{

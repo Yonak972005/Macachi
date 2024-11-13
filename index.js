@@ -21,3 +21,9 @@ modalBackground.addEventListener('click', () => {
   modalNavbar.classList.remove('open');
   modalBackground.style.display = 'none';
 });
+
+document.addEventListener('contextmenu', function(event) {
+  if (event.target.tagName.toLowerCase() === 'img') {
+    event.preventDefault();  // Deshabilita el clic derecho en imágenes
+  }
+});
