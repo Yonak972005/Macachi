@@ -5,6 +5,7 @@ body {
   font-style: normal;
   position: relative;
   min-height: 100vh;
+  background-color: #000000;
 }
 
 .top-header {
@@ -158,7 +159,6 @@ body {
 /* Mision vision */
 
 .m-v{
-  background-color: rgb(0, 0, 0);
   margin-top: -3px;
   padding: 10px;
 }
@@ -200,6 +200,47 @@ body {
 }
 
 /* Slider productos principales */
+
+.gallery{
+  margin: 30px 30px 30px 30px;
+
+}
+.gallery__image-container{
+  background-image: url(./images/image-product-1.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  border: 1px solid red;
+  background-position-y: -15px;
+  background-position-x: -5px;
+  border-radius: 10%;
+}
+
+.gallery__image-container:hover{
+  cursor: pointer;
+}
+
+.gallery__previus{
+  background-color: hsl(0, 100%, 50%);
+  width: 15px;
+  height: 15px;
+  padding: 9px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 2%;
+}
+
+.gallery__next{
+  background-color: hsl(0, 100%, 50%);
+  width: 15px;
+  height: 15px;
+  padding: 9px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  right: -77%;
+}
 
 /* Productos */
 .products-container{
@@ -473,6 +514,10 @@ body {
     padding: 2%;
   }
   /* Slider productos principales */
+  
+  .gallery{
+  display: none;
+  }
 
   /*Productos */
 
