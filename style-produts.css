@@ -156,6 +156,13 @@ body {
   100% {margin-left: -300%;}
 }
 
+.products-container {
+  display: grid;
+  background-color: #000000;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
 .products-container h2 {
   width: 100%;
   height: auto;
@@ -168,13 +175,6 @@ body {
 
 .product-content {
   padding: 30px 30px 30px 30px;
-}
-
-.products-container {
-  display: grid;
-  background-color: #000000;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
 }
 
 .product {
