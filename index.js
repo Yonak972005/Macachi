@@ -64,11 +64,9 @@ document.addEventListener("keyup", e=>{
             ?productos.classList.remove("filtro")
             :productos.classList.add("filtro")
       })
-
   }
-
-
 })
+
 // FUNCIONES
 
 function changePreviusImage(imgContainer){
