@@ -396,6 +396,12 @@ body {
     appearance: none;
   }
 
+  .filtro{
+    display: none;
+  }
+
+  /* Productos */
+
   .product-content {
     position: relative;
     display: grid;

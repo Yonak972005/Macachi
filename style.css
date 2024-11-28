@@ -129,7 +129,6 @@ body {
   display: flex;
   padding: 0;
   width: 400%;
-  
   animation: slide 20s infinite alternate ease-in-out;
 }
 
@@ -417,6 +416,9 @@ body {
     display: none;
   }
 
+  
+/* Buscador */
+
   .header_search{
   display: flex;
   background-color: rgb(116, 116, 116);
@@ -470,6 +472,10 @@ body {
 
   .search-form input::-webkit-search-cancel-button {
     appearance: none;
+  }
+
+  .filtro{
+    display: none;
   }
 
   /* Mision vision */
