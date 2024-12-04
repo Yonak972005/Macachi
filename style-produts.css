@@ -118,6 +118,12 @@ body {
   display: none;
 }
 
+/*carrito*/
+
+
+
+/*slider*/
+
 .slider-frame {
   width: 100%;
   height: auto;
@@ -202,17 +208,13 @@ body {
 
 .product-txt p {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .product-txt h3 {
   margin-bottom: 10PX;
 }
 
-.btn-2 {
-  color: #000000;
-}
-
+/*footer*/
 .footer {
   display: flex;
   background: rgb(116, 116, 116);
@@ -313,17 +315,6 @@ body {
     margin-right: 3%;
   }
 
-  .header_cart {
-    width: 25px;
-    height: auto;
-    color: #ff0000;
-  }
-
-  .header_cart:hover {
-    cursor: pointer;
-    scale: 1.1;
-  }
-
   .text {
     display: flex;
     color: #ffffff;
@@ -399,6 +390,95 @@ body {
   }
 
   .filtro{
+    display: none;
+  }
+  /*carrito*/
+
+  .header_cart {
+    width: 28px;
+    height: auto;
+    padding-right: 20px;
+  }
+
+  .header_cart:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
+
+  .container-icon{
+    position: relative;
+    height: 40px;
+  }
+
+  .count-products{
+    position: absolute;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  #contador-productos{
+    font-size: 13px;
+  }
+
+  .container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(116, 116, 116);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width:300px;
+    z-index: 1;
+  }
+
+  .cart-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.5;
+  }
+
+  .titulo-producto-carrito{
+    font-size: 20px;
+  }
+
+  .cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .icon-close{
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-close:hover{
+    background-color: #000000;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+
+  .cart-total{
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    border-top: 1px solid white;
+  }
+
+  .hidden-cart{
     display: none;
   }
 

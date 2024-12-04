@@ -60,10 +60,27 @@
                 <a class="header_logo" href="../index.html"><h1>MACACHI</h1></a>
             </div>
 
-            <div class="main_header_cart">
+            <div class="container-icon">
                 <img class="header_cart" src="../images/icon-cart.png" alt="Icono del carrito de compras">
-                <span class="text">Carrito</span>
-                <span class="number">0</span>
+                <div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+                <div class="container-cart-products hidden-cart">
+
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">nikke</p>
+                        </div>
+                        <img class="icon-close" src="../images/icon-close.png" alt="icon close">
+                    </div>
+
+                    <div class="cart-total">
+                        <button class="botton-wh">Pedido por whatsapp</button>
+                    </div>
+
+                </div>
+
             </div>
 
         </header>
@@ -156,4 +173,5 @@
 
 <script src="../index.js"></script>
 <script src="filtro.js"></script>
+<script src="../carro.js"></script>
 </html>
