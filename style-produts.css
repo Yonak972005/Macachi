@@ -213,6 +213,22 @@ body {
   display: none;
 }
 
+.botton-wh{
+  color: rgb(0, 0, 0);
+  background-color: grey;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  font-weight: 600; 
+}
+
+.botton-wh:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+
+
 /*Productor*/
 
 .products-container {
@@ -295,17 +311,8 @@ body {
   margin: auto;
 }
 
-.botton-wh{
-  color: rgb(0, 0, 0);
-  background-color: grey;
-  border: 1px solid white;
-  border-radius: 10px;
-  width: 200px;
-  height: 30px;
-  font-weight: 600; 
-}
-
 /*footer*/
+
 .footer {
   display: flex;
   background: rgb(116, 116, 116);
@@ -583,6 +590,11 @@ body {
     width: 200px;
     height: 30px;
     font-weight: 600; 
+    }
+
+  .botton-wh:hover{
+    cursor: pointer;
+    scale: 1.05;
     }
 
   /* Productos */
