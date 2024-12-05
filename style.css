@@ -242,6 +242,7 @@ body {
 }
 
 /* Productos */
+
 .products-container{
   background-color: #000000;
   gap: 30px;
@@ -284,9 +285,97 @@ body {
   margin-bottom: 10PX;
 }
 
-.btn-2{
-  color: #000000;
+/*carrito*/
+
+.header_cart {
+  width: 28px;
+  height: auto;
+  padding-right: 30px;
+  padding-top: 5px;
 }
+
+.header_cart:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.container-icon{
+  position: relative;
+  height: 40px;
+}
+
+.count-products{
+  position: absolute;
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 13px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: rgb(116, 116, 116);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  width:300px;
+  z-index: 1;
+}
+
+.cart-product{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.5;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 20px;
+  height: 20px;
+}
+
+.icon-close:hover{
+  background-color: #000000;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  padding: 15px 5px;
+  border-top: 1px solid white;
+}
+
+.hidden-cart{
+  display: none;
+}
+
 
 .footer{
   display: flex;
@@ -478,6 +567,107 @@ body {
     display: none;
   }
 
+  /*carrito*/
+
+  .header_cart {
+    width: 28px;
+    height: auto;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  .header_cart:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
+
+  .container-icon{
+    position: relative;
+    height: 40px;
+  }
+
+  .count-products{
+    position: absolute;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    top: 100%;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  #contador-productos{
+    font-size: 13px;
+  }
+
+  .container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(116, 116, 116);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width:300px;
+    z-index: 1;
+  }
+
+  .cart-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.5;
+  }
+
+  .titulo-producto-carrito{
+    font-size: 20px;
+  }
+
+  .cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .icon-close{
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-close:hover{
+    background-color: #000000;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+
+  .cart-total{
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    border-top: 1px solid white;
+  }
+
+  .hidden-cart{
+    display: none;
+  }
+
+  .botton-wh{
+    color: rgb(0, 0, 0);
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-weight: 600; 
+    }
+
   /* Mision vision */
 
   .m-v{
@@ -564,6 +754,10 @@ body {
     margin-bottom: 10px;
   }
 
+  .cart-pedido{
+    width: 20px;
+  }
+  
 }
 
 

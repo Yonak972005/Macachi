@@ -51,20 +51,37 @@
 
         <!-- Inicio del header -->
         <header class="header">
-            <a class="header_icon" href="index.html">
+            <a class="header_icon" href="./index.html">
             <img class="header_icon" src="./images/icon.png" alt="Icono logo">
             </a>
 
             <img class="header_menu" src="./images/icon-menu.png" alt="menu icon">
             
             <div class="header_logo">
-                <a class="header_logo" href="index.html"><h1>MACACHI</h1></a>
+                <a class="header_logo" href="./index.html"><h1>MACACHI</h1></a>
             </div>
 
-            <div class="main_header_cart">
+            <div class="container-icon">
                 <img class="header_cart" src="./images/icon-cart.png" alt="Icono del carrito de compras">
-                <span class="text">Carrito</span>
-                <span class="number">0</span>
+                <div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+                <div class="container-cart-products hidden-cart">
+
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">nikke</p>
+                        </div>
+                        <img class="icon-close" src="./images/icon-close.png" alt="icon close">
+                    </div>
+
+                    <div class="cart-total">
+                        <button class="botton-wh">Pedido por whatsapp</button>
+                    </div>
+
+                </div>
+
             </div>
 
         </header>
@@ -100,20 +117,10 @@
     <div class="slider-frame">
         <!-- 2000px x 650px -->
         <ul>
-            <a href="*">
             <li><img src="./images/slider1.png" alt=""></li>
-            <a href="*">
-            </a>
-            <a href="*">
             <li><img src="./images/slider2.png" alt=""></li>
-            <a href="*">
-            </a>
-            <a href="*">
             <li><img src="./images/slider3.png" alt=""></li>
-            </a>
-            <a href="*">
             <li><img src="./images/slider4.png" alt=""></li>
-            </a>
         </ul>
     </div>
 
@@ -396,5 +403,6 @@
 
 
 
-<script src="./index.js"></script>
+<script src="index.js"></script>
+<script src="carro.js"></script>
 </html>
