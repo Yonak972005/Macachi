@@ -34,11 +34,11 @@ const previusGalleryBtn = document.querySelector('.gallery__previus');
 const nextGalleryBtn = document.querySelector('.gallery__next');
 let imgIndex = 1;
 
-nextGalleryBtn.addEventListener('click', ()=>{
+nextGalleryBtn.addEventListener('click', ()=> {
     changeNextImage(imageContainer);
 });
 
-previusGalleryBtn.addEventListener('click', ()=>{
+previusGalleryBtn.addEventListener('click', ()=> {
     changePreviusImage(imageContainer);
 });
 

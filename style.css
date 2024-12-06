@@ -118,11 +118,13 @@ body {
 
 .titulo-producto-carrito{
   font-size: 20px;
+  white-space: nowrap
 }
 
 .cantidad-producto-carrito{
   font-weight: 400;
   font-size: 20px;
+  padding-right: 40px;
 }
 
 .icon-close{
@@ -646,11 +648,14 @@ body {
 
   .titulo-producto-carrito{
     font-size: 20px;
+    text-align: center;
+    white-space: nowrap
   }
 
   .cantidad-producto-carrito{
     font-weight: 400;
     font-size: 20px;
+    padding-right: 40px;
   }
 
   .icon-close{
