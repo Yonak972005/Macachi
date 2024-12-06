@@ -28,7 +28,7 @@ productsList.addEventListener('click', e => {
 
         const infoProduct = {
             quantity : 1,
-            title: product.querySelector('p').textContent
+            title: product.querySelector('h3').textContent
 
         }
 
