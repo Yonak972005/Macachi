@@ -110,7 +110,6 @@ function enviarCarritoPorWhatsApp(allProducts, numero) {
     let mensajeCodificado = encodeURIComponent(mensaje);
     let url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
-    // Abrimos WhatsApp con el mensaje preparado
-    window.open(url, '_blank');
+    // Usar window.location.href para abrir el enlace directamente
+    window.location.href = url;
 }
-
