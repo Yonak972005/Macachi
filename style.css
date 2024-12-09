@@ -104,6 +104,11 @@ body {
   z-index: 1;
 }
 
+.row-product{
+  max-height: 400px;  /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; 
+}
+
 .cart-product{
   display: flex;
   justify-content: space-between;
@@ -632,6 +637,11 @@ body {
     border-radius: 10px;
     width:300px;
     z-index: 1;
+  }
+
+  .row-product{
+    max-height: 400px;  /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto; 
   }
 
   .cart-product{

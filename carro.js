@@ -17,7 +17,7 @@ const productsList = document.querySelector('.product-content')
 
 let allProducts = []
 
-
+const countProducts = document.querySelector('#contador-productos');
 
 
 
@@ -32,16 +32,51 @@ productsList.addEventListener('click', e => {
 
         }
 
-        allProducts = [...allProducts, infoProduct];
+        const exits = allProducts.some(product => product.title === infoProduct.title)
+
+        if (exits){
+            const products = allProducts.map (product => {
+                if (product.title === infoProduct.title){
+                    product.quantity++;
+                    return product
+                }else{
+                    return product
+                }
+            })
+            allProducts = [...products]
+
+        }else{
+            allProducts = [...allProducts, infoProduct];
+        }
 
         showHTML();
 	}
 
 });
 
-//fundion mostrar html
+rowProduct.addEventListener('click', e => {
+	if (e.target.classList.contains('icon-close')) {
+		const product = e.target.parentElement;
+		const title = product.querySelector('p').textContent;
+
+		allProducts = allProducts.filter(
+			product => product.title !== title
+		);
+
+		console.log(allProducts);
+
+		showHTML();
+	}
+});
+
+//funcion mostrar html
 
 const showHTML =() => {
+
+    //limpiar html
+    rowProduct.innerHTML = '';
+
+    let totalOfProducts = 0;
 
     allProducts.forEach(product =>{
 		const containerProduct = document.createElement('div');
@@ -56,5 +91,9 @@ const showHTML =() => {
         `
 
         rowProduct.append(containerProduct)
-    } )
+
+        totalOfProducts = totalOfProducts + product.quantity;
+    });
+
+    countProducts.innerText = totalOfProducts;
 }
