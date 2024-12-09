@@ -11,6 +11,8 @@ const rowProduct = document.querySelector ('.row-product')
 
 //lista carrito
 
+const carrito = document.querySelector('.info-cart-product')
+
 const productsList = document.querySelector('.product-content')
 
 //variables
@@ -18,9 +20,6 @@ const productsList = document.querySelector('.product-content')
 let allProducts = []
 
 const countProducts = document.querySelector('#contador-productos');
-
-
-
 
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
@@ -97,3 +96,21 @@ const showHTML =() => {
 
     countProducts.innerText = totalOfProducts;
 }
+
+// Función para enviar el carrito por WhatsApp
+function enviarCarritoPorWhatsApp(allProducts, numero) {
+    let mensaje = 'Hola, estos son los productos que quiero comprar:\n\n';
+    
+    allProducts.forEach(product => {
+        mensaje += `Producto: ${product.title}\n`;
+        mensaje += `Cantidad: ${product.quantity}\n\n`;
+    });
+
+    // Codificamos el mensaje para que se pueda pasar en la URL
+    let mensajeCodificado = encodeURIComponent(mensaje);
+    let url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+
+    // Abrimos WhatsApp con el mensaje preparado
+    window.open(url, '_blank');
+}
+
