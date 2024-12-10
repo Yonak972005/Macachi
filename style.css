@@ -228,7 +228,15 @@ body {
   margin-right: 5%;
 }
 
+  /*Buscador*/
+
 .header_search{
+  display: none;
+}
+
+  /*navbar-desk*/
+
+.navbar-desk{
   display: none;
 }
 
@@ -592,6 +600,28 @@ body {
 
   .filtro{
     display: none;
+  }
+
+  /*navbar-desk*/
+
+  .navbar-desk{
+    display: flex;
+    background-color: rgb(116, 116, 116);
+    justify-content: space-between;
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .desk-list{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .desk-list:hover{
+    cursor: pointer;
+    scale: 1.2;
   }
 
   /*carrito*/
