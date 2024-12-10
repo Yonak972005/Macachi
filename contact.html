@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 
-<html>
-
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width">
-        <title>Contacto - MACACHI</title>
-        <link rel="stylesheet" href="reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Repuestos de alta calidad para motocicletas,Motos repuestos,Mejores motores de motocicletas,Comprar motores de arranque,Repuestos confiables para motocicletas,
+        Repuestos originales para Pulsar NS,Repuestos para KTM duke 390,Repuestos originales para dominar 400,R
+        epuestos originales NS 200,Piezas de motores Pulsar 200 NS,Repuestos Kawasaki Originales,Partes de motos originales nuevas,aceite de motor y refrigerante de motor">
+        <meta name="description" content="Adquiera respuestos de motos y partes de lujo, fiabilidad y desempeno garantizado.">
+        <meta name="author" content="Angel David Osma Pamplona">
+        <meta name="robots" content="index">
+
+        <title>Macachi</title>
+
     </head>
 
     <body>
 
-        <header>
-            <div class="box">
-                <h1> <img src="" alt="Logo MACACHI"></h1>
-                
-                <!-- barra de navegacion (opcional)
-                    <nav class="modal-navbar">
-                        <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
-                            <ul class="modal-navbar_items">
-                                <li><a class="navbar_links" href="./index.html">Inicio</a></li>
-                                <li><a class="navbar_links" href="./contact.html">Contactenos</a></li>
-                                <li><a class="navbar_links" href="*">Redes</a></li>
-                                <li><a class="navbar_links" href="*">Ubicacion </a></li>
-                            /ul>
-                    </nav>
-                -->
-                
+        <div class="top-header flex">
+            <div class="left flex">
+                <div class="top_whatsapp">
+                    <a href="1">
+                    <img src="./images/icon-whatsapp.png" alt="icon whatsapp">
+                    <span class="whatsapp">Whatsapp 311 444 6963</span>
+                    </a>
+                </div>
+                <div class="top_call">
+                    <a href="1">
+                    <img src="./images/icon-call.png" alt="icon telefono">
+                    <span class="call">Llamar ahora 311 444 6963</span>
+                    </a>
+                </div>
             </div>
+
+            <div class="right flex">
+                <div class="top_envios">
+                    <img src="./images/icon-envio.png" alt="carrito de envios">
+                    <span class="envios">Envios a todo colombia</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Inicio del header -->
+        <header class="header">
+            <a class="header_icon" href="./index.html">
+            <img class="header_icon" src="./images/icon.png" alt="Icono logo">
+            </a>
+
+            <img class="header_menu" src="./images/icon-menu.png" alt="menu icon">
+            
+            <div class="header_logo">
+                <a class="header_logo" href="./index.html"><h1>MACACHI</h1></a>
+            </div>
+
+            <div class="container-icon">
+                <div class="row-product">
+                <div class="container-cart-icon">
+                    <img class="header_cart" src="./images/icon-cart.png" alt="Icono del carrito de compras">
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Guias cilindro</p>
+                        </div>
+                        <img class="icon-close" src="./images/icon-close.png" alt="icon close">
+                    </div>
+
+                    <div class="cart-total">
+                        <button class="botton-wh" onclick="enviarCarritoPorWhatsApp(allProducts, '+573213808723')">Enviar Carrito por WhatsApp</button>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
         </header>
+        <!-- Fin del header -->
+
+
+        <!-- Inicio Buscador -->
+        <div class="header_search">
+            <form class="search-form">
+                <button class="btn-search">
+                    <img src="./images/icon-search.png" alt="Icono Buscador">
+                </button>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+            </form>
+        </div>
+        <!-- Fin Buscador -->
+
+
+    <!-- Inicio del main -->
+    <div class="modal-navbar_background"></div>
+
+    <!-- Menú deslizante (navbar) -->
+    <nav class="modal-navbar">
+        <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
+        <ul class="modal-navbar_items">
+            <li><a class="navbar_links" href="./index.html">Inicio</a></li>
+            <li><a class="navbar_links" href="./contact.html">Contactenos</a></li>
+            <li><a class="navbar_links" href="*">Redes</a></li>
+            <li><a class="navbar_links" href="*">Ubicacion </a></li>
+        </ul>
+    </nav>
 
         <main class="contact">
             <form>

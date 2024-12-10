@@ -29,13 +29,13 @@
                 <div class="top_whatsapp">
                     <a href="1">
                     <img src="./images/icon-whatsapp.png" alt="icon whatsapp">
-                    <span class="whatsapp">Whatsapp *** *** ****</span>
+                    <span class="whatsapp">Whatsapp 311 444 6963</span>
                     </a>
                 </div>
                 <div class="top_call">
                     <a href="1">
                     <img src="./images/icon-call.png" alt="icon telefono">
-                    <span class="call">Llamar ahora *** *** ****</span>
+                    <span class="call">Llamar ahora 311 444 6963</span>
                     </a>
                 </div>
             </div>
@@ -61,8 +61,7 @@
                 <a class="header_logo" href="./index.html"><h1>MACACHI</h1></a>
             </div>
 
-            <div class="container-icon">
-                <div class="row-product">
+        <div class="container-icon">
                 <div class="container-cart-icon">
                     <img class="header_cart" src="./images/icon-cart.png" alt="Icono del carrito de compras">
                     <div class="count-products">
@@ -71,21 +70,17 @@
                 </div>
 
                 <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
                     <div class="cart-product">
-                        <div class="info-cart-product">
-                            <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">Guias cilindro</p>
-                        </div>
-                        <img class="icon-close" src="./images/icon-close.png" alt="icon close">
                     </div>
-
-                    <div class="cart-total">
-                        <button class="botton-wh">Pedido por whatsapp</button>
-                    </div>
-
                 </div>
+
+                <div class="cart-total">
+                    <button class="botton-wh" onclick="enviarCarritoPorWhatsApp(allProducts, '+573213808723')">Enviar Carrito por WhatsApp</button>
                 </div>
-            </div>
+                    
+                </div>
+        </div>
 
         </header>
         <!-- Fin del header -->
@@ -101,6 +96,10 @@
             </form>
         </div>
         <!-- Fin Buscador -->
+        <div>
+            <a class="navbar_links" href="./contact.html">Contactenos</a>
+            <a class="navbar_links" href="*">Redes</a>
+        </div>
 
 
     <!-- Inicio del main -->
@@ -113,7 +112,6 @@
             <li><a class="navbar_links" href="./index.html">Inicio</a></li>
             <li><a class="navbar_links" href="./contact.html">Contactenos</a></li>
             <li><a class="navbar_links" href="*">Redes</a></li>
-            <li><a class="navbar_links" href="*">Ubicacion </a></li>
         </ul>
     </nav>
 

@@ -398,6 +398,9 @@ body {
 .product-txt h3{
   margin-bottom: 10PX;
 }
+/* Contacto*/
+
+/* Contacto*/
 
 /*footer*/
 
@@ -632,11 +635,13 @@ body {
     position: absolute;
     top: 50px;
     right: 0;
+  
     background-color: rgb(116, 116, 116);
+    width:450px;
+    z-index: 1;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
-    width:300px;
-    z-index: 1;
+    
   }
 
   .row-product{
@@ -646,18 +651,21 @@ body {
 
   .cart-product{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 25px;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
   }
 
   .info-cart-product{
     display: flex;
     justify-content: space-between;
-    flex: 0.5;
+    flex: 0;
   }
 
   .titulo-producto-carrito{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     white-space: nowrap
   }
@@ -665,7 +673,7 @@ body {
   .cantidad-producto-carrito{
     font-weight: 400;
     font-size: 20px;
-    padding-right: 40px;
+    padding-right: 30px;
   }
 
   .icon-close{
@@ -794,6 +802,11 @@ body {
   .cart-pedido{
     width: 20px;
   }
+  
+  /* Contacto*/
+
+  /* Contacto*/
+
   
 }
 
