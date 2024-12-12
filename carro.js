@@ -1,97 +1,90 @@
-const btnCart = document.querySelector('.container-cart-icon')
-const containerCartProducts = document.querySelector ('.container-cart-products')
+const btnCart = document.querySelector('.container-cart-icon');
+const containerCartProducts = document.querySelector('.container-cart-products');
 
 btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-})
+    containerCartProducts.classList.toggle('hidden-cart');
+});
 
 /*------------------*/
-const cartInfo = document.querySelector('.cart-product')
-const rowProduct = document.querySelector ('.row-product')
+const cartInfo = document.querySelector('.cart-product');
+const rowProduct = document.querySelector('.row-product');
 
-//lista carrito
+// lista carrito
+const carrito = document.querySelector('.info-cart-product');
+const productsList = document.querySelector('.product-content');
 
-const carrito = document.querySelector('.info-cart-product')
-
-const productsList = document.querySelector('.product-content')
-
-//variables
-
-let allProducts = []
+// variables
+let allProducts = JSON.parse(localStorage.getItem('cart')) || []; // Cargar carrito desde localStorage
 
 const countProducts = document.querySelector('#contador-productos');
 
-productsList.addEventListener('click', e => {
-	if (e.target.classList.contains('btn-add-cart')) {
-		const product = e.target.parentElement;
+productsList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('btn-add-cart')) {
+        const product = e.target.parentElement;
 
         const infoProduct = {
-            quantity : 1,
+            quantity: 1,
             title: product.querySelector('h3').textContent
+        };
 
-        }
+        const exits = allProducts.some(product => product.title === infoProduct.title);
 
-        const exits = allProducts.some(product => product.title === infoProduct.title)
-
-        if (exits){
-            const products = allProducts.map (product => {
-                if (product.title === infoProduct.title){
+        if (exits) {
+            const products = allProducts.map(product => {
+                if (product.title === infoProduct.title) {
                     product.quantity++;
-                    return product
-                }else{
-                    return product
+                    return product;
+                } else {
+                    return product;
                 }
-            })
-            allProducts = [...products]
-
-        }else{
+            });
+            allProducts = [...products];
+        } else {
             allProducts = [...allProducts, infoProduct];
         }
 
+        // Guardar el carrito actualizado en localStorage
+        localStorage.setItem('cart', JSON.stringify(allProducts));
+
         showHTML();
-	}
-
+    }
 });
 
-rowProduct.addEventListener('click', e => {
-	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement;
-		const title = product.querySelector('p').textContent;
+rowProduct.addEventListener('click', (e) => {
+    if (e.target.classList.contains('icon-close')) {
+        const product = e.target.parentElement;
+        const title = product.querySelector('p').textContent;
 
-		allProducts = allProducts.filter(
-			product => product.title !== title
-		);
+        allProducts = allProducts.filter(product => product.title !== title);
 
-		console.log(allProducts);
+        // Guardar el carrito actualizado en localStorage
+        localStorage.setItem('cart', JSON.stringify(allProducts));
 
-		showHTML();
-	}
+        showHTML();
+    }
 });
 
-//funcion mostrar html
-
-const showHTML =() => {
-
-    //limpiar html
+// Función mostrar HTML
+const showHTML = () => {
+    // Limpiar HTML
     rowProduct.innerHTML = '';
 
     let totalOfProducts = 0;
 
-    allProducts.forEach(product =>{
-		const containerProduct = document.createElement('div');
+    allProducts.forEach(product => {
+        const containerProduct = document.createElement('div');
         containerProduct.classList.add('cart-product');
 
-		containerProduct.innerHTML = `
+        containerProduct.innerHTML = `
             <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
                 <p class="titulo-producto-carrito">${product.title}</p>
             </div>
-                <img class="icon-close" src="../images/icon-close.png" alt="icon close">
-        `
+            <img class="icon-close" src="../images/icon-close.png" alt="icon close">
+        `;
 
-        rowProduct.append(containerProduct)
-
-        totalOfProducts = totalOfProducts + product.quantity;
+        rowProduct.append(containerProduct);
+        totalOfProducts += product.quantity;
     });
 
     countProducts.innerText = totalOfProducts;
@@ -109,4 +102,8 @@ function enviarCarritoPorWhatsApp(allProducts, numero) {
     // Codificamos el mensaje para que se pueda pasar en la URL
     let mensajeCodificado = encodeURIComponent(mensaje);
     let url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+    window.open(url, '_blank');
 }
+
+// Inicializar la vista del carrito al cargar la página
+showHTML();
