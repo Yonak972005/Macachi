@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-
+        <!-- Definición de metadatos del documento -->
+        <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        
+        <!-- Conexiones para cargar fuentes de Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Repuestos de alta calidad para motocicletas,Motos repuestos,Mejores motores de motocicletas,Comprar motores de arranque,Repuestos confiables para motocicletas,
-        Repuestos originales para Pulsar NS,Repuestos para KTM duke 390,Repuestos originales para dominar 400,R
-        epuestos originales NS 200,Piezas de motores Pulsar 200 NS,Repuestos Kawasaki Originales,Partes de motos originales nuevas,aceite de motor y refrigerante de motor">
-        <meta name="description" content="Adquiera respuestos de motos y partes de lujo, fiabilidad y desempeno garantizado.">
-        <meta name="author" content="Angel David Osma Pamplona">
-        <meta name="robots" content="index">
-
-        <title>Macachi</title>
-
+        <link rel="stylesheet" href="style.css"> <!-- Estilos principales -->
+        <link rel="stylesheet" href="reset.css"> <!-- Reset de estilos por defecto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"> <!-- Estilo de fuente personalizada -->
+        
+        <!-- Metadatos de la página -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividad -->
+        <meta name="keywords" content="Repuestos de alta calidad para motocicletas,..."> <!-- Palabras clave para SEO -->
+        <meta name="description" content="Adquiera repuestos de motos y partes de lujo, fiabilidad y desempeño garantizado."> <!-- Descripción para SEO -->
+        <meta name="author" content="Angel David Osma Pamplona"> <!-- Autor de la página -->
+        <meta name="robots" content="index"> <!-- Instrucciones para los robots de búsqueda -->
+        
+        <title>Macachi</title> <!-- Título de la página -->
     </head>
 
     <body>
-
+        <!-- Barra superior con contacto y envío -->
         <div class="top-header flex">
             <div class="left flex">
                 <div class="top_whatsapp">
@@ -39,24 +38,26 @@
             <div class="right flex">
                 <div class="top_envios">
                     <img src="./images/icon-envio.png" alt="carrito de envios">
-                    <span class="envios">Envios a todo colombia</span>
+                    <span class="envios">Envios a todo Colombia</span>
                 </div>
             </div>
         </div>
 
-        <!-- Inicio del header -->
+        <!-- Header de la página (logo y menú) -->
         <header class="header">
             <a class="header_icon" href="./index.html">
-            <img class="header_icon" src="./images/icon.png" alt="Icono logo">
+                <img class="header_icon" src="./images/icon.png" alt="Icono logo">
             </a>
-
+            
+            <!-- Menú de navegación -->
             <img class="header_menu" src="./images/icon-menu.png" alt="menu icon">
             
             <div class="header_logo">
                 <a class="header_logo" href="./index.html"><h1>MACACHI</h1></a>
             </div>
 
-        <div class="container-icon">
+            <!-- Carrito de compras -->
+            <div class="container-icon">
                 <div class="container-cart-icon">
                     <img class="header_cart" src="./images/icon-cart.png" alt="Icono del carrito de compras">
                     <div class="count-products">
@@ -65,23 +66,18 @@
                 </div>
 
                 <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                    <div class="cart-product">
+                    <div class="row-product hidden">
+                        <div class="cart-product"></div>
+                    </div>
+
+                    <div class="cart-total">
+                        <button class="botton-wh" onclick="enviarCarritoPorWhatsApp(allProducts, '+573114446963')">Enviar Carrito por WhatsApp</button>
                     </div>
                 </div>
-
-                <div class="cart-total">
-                    <button class="botton-wh" onclick="enviarCarritoPorWhatsApp(allProducts, '+573114446963')">Enviar Carrito por WhatsApp</button>
-                </div>
-                    
-                </div>
-        </div>
-
+            </div>
         </header>
-        <!-- Fin del header -->
 
-
-        <!-- Inicio Buscador -->
+        <!-- Buscador en el header -->
         <div class="header_search">
             <form class="search-form">
                 <button class="btn-search">
@@ -90,8 +86,8 @@
                 <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
             </form>
         </div>
-        <!-- Fin Buscador -->
-        
+
+        <!-- Navegación de escritorio -->
         <div class="navbar-desk">
             <a class="desk-list" href="./contact.html">Contactenos</a>
             <a class="desk-list" href="https://wa.me/3114446963?text=Hola%20Macachi" target="_blank">WhatsApp</a>
@@ -99,33 +95,30 @@
             <a class="desk-list" href="https://www.instagram.com/macachitornillos/">Instagram</a>
         </div>
 
+        <!-- Menú deslizante (Navbar móvil) -->
+        <div class="modal-navbar_background"></div>
+        <nav class="modal-navbar">
+            <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
+            <ul class="modal-navbar_items">
+                <li><a class="navbar_links" href="./index.html">Inicio</a></li>
+                <li><a class="navbar_links" href="./contact.html">Contacto</a></li>
+                <li><a class="navbar_links" href="https://wa.me/3114446963?text=Hola%20Macachi" target="_blank">WhatsApp</a></li>
+                <li><a class="navbar_links" href="https://www.facebook.com/Macachitornillos/">Facebook</a></li>
+                <li><a class="navbar_links" href="https://www.instagram.com/macachitornillos/">Instagram</a></li>
+            </ul>
+        </nav>
 
-    <!-- Inicio del main -->
-    <div class="modal-navbar_background"></div>
+        <!-- Slider de imágenes -->
+        <div class="slider-frame">
+            <ul>
+                <li><img src="./images/slider1.png" alt=""></li>
+                <li><img src="./images/slider2.png" alt=""></li>
+                <li><img src="./images/slider3.png" alt=""></li>
+                <li><img src="./images/slider4.png" alt=""></li>
+            </ul>
+        </div>
 
-    <!-- Menú deslizante (navbar) -->
-    <nav class="modal-navbar">
-        <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
-        <ul class="modal-navbar_items">
-            <li><a class="navbar_links" href="./index.html">Inicio</a></li>
-            <li><a class="navbar_links" href="./contact.html">Contacto</a></li>
-            <li><a class="navbar_links" href="https://wa.me/3114446963?text=Hola%20Macachi" target="_blank">WhatsApp</a></li>
-            <li><a class="navbar_links" href="https://www.facebook.com/Macachitornillos/">Facebook</a></li>
-            <li><a class="navbar_links" href="https://www.instagram.com/macachitornillos/">Instagram</a></li>
-        </ul>
-    </nav>
-
-    <div class="slider-frame">
-        <!-- 2000px x 650px -->
-        <ul>
-            <li><img src="./images/slider1.png" alt=""></li>
-            <li><img src="./images/slider2.png" alt=""></li>
-            <li><img src="./images/slider3.png" alt=""></li>
-            <li><img src="./images/slider4.png" alt=""></li>
-        </ul>
-    </div>
-
-    <!-- Mision vision-->
+        <!-- Sección de Misión y Visión -->
 
     <div class="m-v">
         <div class="mision">
@@ -138,17 +131,19 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque amet tempore, ducimus ullam unde facere repudiandae vel ab, itaque, pariatur sint dolorem consequatur deleniti! Ex cumque quidem beatae porro?
         </div>
     </div>
-    <!-- Slider porductos principales-->
-    <article class="gallery">
-        <div class="gallery__image-container">
-            <img class="gallery__previus" src="./images/icon-previous.svg" alt="previus">
-            <img class="gallery__next" src="./images/icon-next.svg" alt="next">
-        </div>
-    </article>
-    
-    <!-- Productos-->
-    <main class="products-container">
-        <div class="product-content">
+
+    <!-- Galería de productos -->
+        <article class="gallery">
+            <div class="gallery__image-container">
+                <img class="gallery__previus" src="./images/icon-previous.svg" alt="previus">
+                <img class="gallery__next" src="./images/icon-next.svg" alt="next">
+            </div>
+        </article>
+
+        <!-- Productos destacados -->
+        <main class="products-container">
+            <!-- Cada bloque de producto -->
+            <div class="product-content">
             <div class="product">
                 <a href="./tornillosdelujo/tornillosdelujo.html">
                     <img src="./images/TORNILLO DE LUJO.jpg" alt="TORNILLO DE LUJO">
@@ -394,16 +389,15 @@
     </main>
 
 
-        <!-- Inicio del footer -->
-        <footer class="footer">
-            <img class="icon_footer" src="./images/icon.png" alt="Logo de Macachi">
-            <p class="copyright">© Copyright Macachi, Tornillos, Clavos y Lujos. - 2024.</p>
-        </footer>
-        <!-- Fin del footer -->
-    </body>
+<!-- Footer de la página -->
+<footer class="footer">
+    <img class="icon_footer" src="./images/icon.png" alt="Logo de Macachi">
+    <p class="copyright">© Copyright Macachi, Tornillos, Clavos y Lujos. - 2024.</p>
+</footer>
 
+</body>
 
-
+<!-- Archivos JavaScript -->
 <script src="index.js"></script>
 <script src="carro.js"></script>
 </html>

@@ -14,6 +14,8 @@ body {
   display: none;  /* Oculta el encabezado superior */
 }
 
+/* Header */
+
 .header {
   background-color: rgb(116, 116, 116);  /* Color de fondo gris */
   height: 50px;  /* Altura del header */
@@ -46,6 +48,14 @@ body {
 }
 
 /* Navbar - Barra de navegación */
+.text {
+  display: none;
+}
+
+.number {
+  display: none;
+}
+
 .navbar {
   display: none;  /* Oculta la barra de navegación */
 }
@@ -223,6 +233,10 @@ body {
   border-top: 1px solid white;  /* Borde superior */
 }
 
+.hidden-cart {
+  display: none;
+}
+
 /* Contenedor del botón de compra */
 .botton-wh {
   color: rgb(0, 0, 0);
@@ -231,7 +245,7 @@ body {
   border-radius: 10px;
   width: 200px;
   height: 30px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 
 .botton-wh:hover {
@@ -249,6 +263,7 @@ body {
 
 .products-container h2 {
   width: 100%;
+  height: auto;
   text-align: center;
   margin-top: 3%;
   margin-bottom: 5%;
@@ -265,6 +280,7 @@ body {
   border-radius: 10px;
   border: 1px solid #ff0000;  /* Borde rojo */
   margin-bottom: 8%;
+  height: auto;
 }
 
 .product:hover {
@@ -388,7 +404,7 @@ body {
     width: 15px;
     height: auto;
   }
-
+  
   /* Cabecera principal */
   .header {
     background-color: rgb(116, 116, 116);
@@ -405,7 +421,7 @@ body {
     height: auto;
     margin: 2.0%;
     margin-top: 4.3%;
-  }
+  }  
 
   /* Efecto hover en los iconos */
   .header_icon:hover {
@@ -454,10 +470,10 @@ body {
 
   /* Estilo para el buscador */
   .header_search {
-    display: flex;
-    background-color: rgb(116, 116, 116);
-    margin: auto;
-    align-items: center;
+  display: flex;
+  background-color: rgb(116, 116, 116);
+  margin: auto;
+  align-items: center;
   }
 
   /* Botón de búsqueda */
@@ -491,7 +507,9 @@ body {
     border-radius: 2rem;
     background-color: rgb(255, 255, 255);
     height: 4.4rem;
+    overflow: hidden;
     width: 30%;
+    height: 20%;
     margin-bottom: 0.5%;
   }
 
@@ -501,11 +519,16 @@ body {
     width: 100%;
     font-size: 120%;
     color: #000000;
+    cursor: pointer;
     background-color: rgb(255, 255, 255);
   }
 
+  .search-form input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+  
   /* Ocultar filtro de búsqueda */
-  .filtro {
+  .filtro{
     display: none;
   }
 
@@ -514,7 +537,10 @@ body {
     display: flex;
     background-color: rgb(116, 116, 116);
     justify-content: space-between;
-    padding: 10px 400px;
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   /* Estilo para los elementos de la barra de navegación */
@@ -528,11 +554,17 @@ body {
     cursor: pointer;
     scale: 1.2;
   }
-
+  
   /* Estilo para la barra de navegación en fondo negro */
   .navbar-desk {
+    display: flex;
     background-color: rgb(0, 0, 0);
-    box-shadow: inset 0 -5px 10px rgba(255, 0, 0, 0.1);
+    justify-content: space-between;
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -5px 10px rgba(255, 0, 0, 0.1); 
   }
 
   /* Estilo para los enlaces de la barra de navegación */
@@ -545,7 +577,7 @@ body {
     color: #ff0000;
     border-bottom: none;
   }
-
+  
   /* Estilo para el carrito de compras */
   .header_cart {
     width: 28px;
@@ -579,7 +611,7 @@ body {
     align-items: center;
     border-radius: 50%;
   }
-
+  
   #contador-productos {
     font-size: 13px;
   }
@@ -589,17 +621,19 @@ body {
     position: absolute;
     top: 50px;
     right: 0;
+  
     background-color: rgb(116, 116, 116);
     width: 450px;
     z-index: 1;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    
   }
 
   /* Fila de productos en el carrito */
   .row-product {
     max-height: 400px;
-    overflow-y: auto;
+    overflow-y: auto; 
   }
 
   /* Estilo de los productos en el carrito */
@@ -608,12 +642,14 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
   }
 
   .info-cart-product {
     display: flex;
     justify-content: space-between;
+    flex: 0;
   }
 
   /* Título del producto en el carrito */
@@ -662,16 +698,17 @@ body {
     border-radius: 10px;
     width: 200px;
     height: 30px;
-    font-weight: 600;
-  }
+    font-weight: 600; 
+    }
 
   .botton-wh:hover {
     cursor: pointer;
     scale: 1.05;
-  }
+    }
 
   /* Estilo de los productos en la página */
   .product-content {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -683,21 +720,25 @@ body {
   .product {
     height: 100%;
   }
-
+  
   /* Estilo de las imágenes de los productos */
   .product img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    padding-left: 0%;
+    padding-right: 0%;
   }
-
+  
   /* Texto de los productos */
   .product-txt {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
   .product-txt p {
-    font-size: 15px;
-    margin: 5px;
+    font-size: 15PX;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
   }
 
   .product-txt h3 {

@@ -98,7 +98,7 @@ body {
   background-color: rgb(116, 116, 116); /* Fondo gris */
   border: 1px solid rgb(255, 255, 255); /* Borde blanco */
   border-radius: 10px;
-  width: 300px;
+  width:300px;
   z-index: 1;
 }
 
@@ -183,6 +183,7 @@ body {
   z-index: 999;
 }
 
+/* Modal navbar (menú deslizante) */
 .modal-navbar {
   background-color: rgb(58, 58, 58);    /* Fondo gris oscuro */
   width: 70%;
@@ -194,6 +195,7 @@ body {
   transition: left 0.3s ease-in-out;    /* Animación para abrir/cerrar el modal */
 }
 
+/* Animación para abrir el menú */
 .modal-navbar.open {
   left: 0;                              /* Mover el modal cuando esté abierto */
 }
@@ -231,7 +233,7 @@ body {
 -------------------------------------------------- */
 .header_search {
   display: none;                        /* Buscar oculto por defecto */
-}
+}  
 
 /* Slider Components
 -------------------------------------------------- */
@@ -259,14 +261,17 @@ body {
 }
 
 @keyframes slide {
-  0% { margin-left: 0; }
-  20% { margin-left: 0; }
-  25% { margin-left: -100%; }
-  45% { margin-left: -100%; }
-  50% { margin-left: -200%; }
-  70% { margin-left: -200%; }
-  75% { margin-left: -300%; }
-  100% { margin-left: -300%; }
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
 }
 
 /* Mission Vision Section
@@ -276,8 +281,26 @@ body {
   padding: 10px;
 }
 
-.mision, .vision {
-  border: solid 1px #ff0000;            /* Borde rojo */
+.mision{
+  border: solid 1px #ff0000;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 3%;
+
+}
+
+.titulo_mision{
+  text-align: center;
+  color: #ff0000;
+  font-size: 35px;
+  padding: 2%;
+  
+}
+
+.vision{
+  border: solid 1px #ff0000;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -285,24 +308,20 @@ body {
   padding-bottom: 3%;
 }
 
-.titulo_mision, .titulo_vision {
+.titulo_vision{
   text-align: center;
-  color: #ff0000;                       /* Título en rojo */
+  color: #ff0000;
   font-size: 35px;
+  font-weight: 700;
   padding: 2%;
 }
 
-.titulo_vision {
-  font-weight: 700;                     /* Peso extra para el título de visión */
-}
+/* Slider productos principales */
+.gallery{
+  margin: 30px 30px 30px 30px;
 
-/* Product Gallery
--------------------------------------------------- */
-.gallery {
-  margin: 30px;
 }
-
-.gallery__image-container {
+.gallery__image-container{
   background-image: url(./images/image-product-1.jpg);
   height: 300px;
   width: 100%;
@@ -317,7 +336,7 @@ body {
   cursor: pointer;                     /* Cambiar cursor al pasar sobre la imagen */
 }
 
-.gallery__previus, .gallery__next {
+.gallery__previus{
   background-color: hsl(0, 100%, 50%);
   width: 15px;
   height: 15px;
@@ -325,13 +344,17 @@ body {
   border-radius: 50%;
   position: relative;
   top: 50%;
-}
-
-.gallery__previus {
   left: 2%;
 }
 
-.gallery__next {
+.gallery__next{
+  background-color: hsl(0, 100%, 50%);
+  width: 15px;
+  height: 15px;
+  padding: 9px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
   right: -77%;
 }
 
@@ -342,11 +365,11 @@ body {
   gap: 30px;
 }
 
-.product-content {
-  padding: 30px;
+.product-content{
+  padding: 30px 30px 30px 30px;
 }
 
-.product {
+.product{
   border-radius: 10px;
   border: 1px solid #ff0000;            /* Borde rojo */
   margin-bottom: 8%;
@@ -377,6 +400,10 @@ body {
 .product-txt h3 {
   margin-bottom: 10px;
 }
+
+/* Contacto*/
+
+/* Contacto*/
 
 /* Footer
 -------------------------------------------------- */
@@ -420,14 +447,7 @@ body {
     margin-left: 2%;
   }
 
-  .right {
-    margin-right: 2%;
-  }
-
-  /* Header Icons */
-  .top_whatsapp img,
-  .top_call img,
-  .top_envios img {
+  .top_whatsapp img {
     width: 15px;
     height: auto;
   }
@@ -436,9 +456,26 @@ body {
     margin-right: 50px;
   }
 
-  /* Main Header */
+  .top_call img {
+    width: 15px;
+    height: auto;
+  }
+
+  .right {
+    margin-right: 2%;
+  }
+
+  .top_envios img {
+    width: 15px;
+    height: auto;
+  }
+  
   .header {
+    background-color: rgb(116, 116, 116);
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header_icon {
@@ -447,7 +484,7 @@ body {
     height: auto;
     margin: 2.0%;
     margin-top: 4.3%;
-  }
+  }  
 
   .header_icon:hover {
     cursor: pointer;
@@ -459,44 +496,52 @@ body {
   }
 
   .header_logo {
+    color: #ffffff;
     font-size: 35px;
     font-weight: 900;
   }
 
   /* Desktop Search */
-  .header_search {
+  .main_header_cart {
     display: flex;
-    background-color: rgb(116, 116, 116);
-    margin: auto;
-    align-items: center;
+    margin-top: 2.5%;
+    margin-right: 3%;
   }
 
-  .search-form {
-    position: relative;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    border: 2px solid #ffffff;
-    border-radius: 2rem;
-    background-color: rgb(255, 255, 255);
-    height: 20%;
-    width: 30%;
-    margin-bottom: 0.5%;
-    overflow: hidden;
+  .header_cart {
+    width: 25px;
+    height: auto;
+    color: #ff0000;
   }
 
-  .search-form input {
-    outline: none;
-    border: none;
-    width: 100%;
-    font-size: 120%;
-    color: #000000;
+  .header_cart:hover {
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    scale: 1.1;
   }
 
-  .search-form input::-webkit-search-cancel-button {
-    appearance: none;
+  .text {
+    display: flex;
+    color: #ffffff;
+    margin: auto;
+    padding: 5%;
+  }
+
+  .number {
+    display: flex;
+    color: #ffffff;
+    margin: auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* Buscador */
+  .header_search {
+  display: flex;
+  background-color: rgb(116, 116, 116);
+  margin: auto;
+  align-items: center;
   }
 
   .btn-search {
@@ -518,13 +563,49 @@ body {
     scale: 1.1;
   }
 
-  /* Desktop Navigation */
-  .navbar-desk {
+  .search-form {
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    height: 4.4rem;
+    overflow: hidden;
+    width: 30%;
+    height: 20%;
+    margin-bottom: 0.5%;
+  }
+
+  .search-form input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 120%;
+    color: #000000;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .search-form input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .filtro{
+    display: none;
+  }
+
+  /*navbar-desk*/
+  .navbar-desk{
     display: flex;
     background-color: rgb(0, 0, 0);
     justify-content: space-between;
-    padding: 10px 400px;
-    box-shadow: inset 0 -5px 10px rgba(255, 0, 0, 0.1);
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -5px 10px rgba(255, 0, 0, 0.1); 
   }
 
   .desk-list {
@@ -541,7 +622,173 @@ body {
     border-bottom: none;
   }
 
-  /* Desktop Products Grid */
+  /*carrito*/
+  .header_cart {
+    width: 28px;
+    height: auto;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+
+  .header_cart:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
+
+  .container-icon {
+    position: relative;
+    height: 40px;
+  }
+
+  .count-products {
+    position: absolute;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    top: 100%;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  #contador-productos {
+    font-size: 13px;
+  }
+
+  .container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  
+    background-color: #747474;
+    width:450px;
+    z-index: 1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    
+  }
+
+  .row-product {
+    max-height: 400px;  /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto; 
+  }
+
+  .cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  }
+
+  .info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 0;
+  }
+
+  .titulo-producto-carrito {
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap
+  }
+
+  .cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 30px;
+  }
+
+  .icon-close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-close:hover {
+    background-color: #000000;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+
+  .cart-total {
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    border-top: 1px solid white;
+  }
+
+  .hidden-cart {
+    display: none;
+  }
+
+  .botton-wh {
+    color: rgb(0, 0, 0);
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-weight: 600; 
+    }
+
+  .botton-wh:hover {
+    cursor: pointer;
+    scale: 1.05;
+    }
+
+  /* Mision vision */
+
+  .m-v {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin-top: -3px;
+    padding: 0px;
+  }
+
+  .mision {
+    border: solid 1px #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
+
+  }
+
+  .titulo_mision {
+    text-align: center;
+    color: #ff0000;
+    font-size: 35px;
+    padding: 2%;
+    
+  }
+
+  .vision {
+    border:solid 1px #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 4%;
+  }
+
+  .titulo_vision {
+    text-align: center;
+    color: #ff0000;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 2%;
+  }
+  /* Slider productos principales */
+  
+  .gallery {
+  display: none;
+  }
+
+  /*Productos */
+
   .product-content {
     position: relative;
     display: grid;
@@ -556,9 +803,22 @@ body {
     height: 100%;
   }
 
+  .product img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .product-txt {
+    margin-bottom: 0px;
+  }
+
   .product-txt p {
-    font-size: 15px;
-    margin: 0 5px;
+    font-size: 15PX;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
   }
 
   .product-txt h3 {
@@ -566,14 +826,11 @@ body {
     margin-bottom: 10px;
   }
 
-  /* Desktop Mission Vision */
-  .m-v {
-    display: flex;
-    padding: 0;
+  .cart-pedido {
+    width: 20px;
   }
+  
+  /* Contacto*/
 
-  /* Hide Gallery in Desktop */
-  .gallery {
-    display: none;
-  }
+  /* Contacto*/
 }
