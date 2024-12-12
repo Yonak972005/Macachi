@@ -801,6 +801,7 @@ body {
 
   .product {
     height: 100%;
+    background-color: rgb(116, 116, 116);
   }
 
   .product img {
@@ -812,6 +813,7 @@ body {
 
   .product-txt {
     margin-bottom: 0px;
+
   }
 
   .product-txt p {
