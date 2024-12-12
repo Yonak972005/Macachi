@@ -80,7 +80,7 @@ const showHTML = () => {
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
                 <p class="titulo-producto-carrito">${product.title}</p>
             </div>
-            <img class="icon-close" src="../images/icon-close.png" alt="icon close">
+            <img class="icon-close" src="icon-close.png" alt="icon close">
         `;
 
         rowProduct.append(containerProduct);
