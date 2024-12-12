@@ -278,9 +278,10 @@ body {
 
 .product {
   border-radius: 10px;
-  border: 1px solid #ff0000;  /* Borde rojo */
+  border: 1px solid #ffffff;  /* Borde rojo */
   margin-bottom: 8%;
   height: auto;
+  background-color: rgb(116, 116, 116);
 }
 
 .product:hover {
@@ -297,7 +298,7 @@ body {
 /* Texto dentro del producto */
 .product-txt {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .product-txt p {
@@ -323,8 +324,8 @@ body {
 
 .btn-add-cart:hover {
   cursor: pointer;
-  background-color: red;  /* Cambio de color al pasar el cursor */
   scale: 1.03;
+  box-shadow: 0px 1px 20px 0px rgb(255, 255, 255); /* Sombra al pasar el cursor */
 }
 
 .btn-add-cart img {
@@ -719,6 +720,7 @@ body {
 
   .product {
     height: 100%;
+    background-color: rgb(116, 116, 116);
   }
   
   /* Estilo de las imágenes de los productos */
@@ -750,7 +752,7 @@ body {
   .btn-add-cart {
     display: flex;
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(116, 116, 116);
     border-radius: 10px;
     width: 200px;
     margin: auto;
@@ -759,8 +761,8 @@ body {
 
   .btn-add-cart:hover {
     cursor: pointer;
-    background-color: red;
     scale: 1.03;
+    box-shadow: 0px 1px 20px 0px rgb(255, 255, 255); /* Sombra al pasar el cursor */
   }
 
   .btn-add-cart img {
