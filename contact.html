@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-
+        <!-- Definición de metadatos del documento -->
+        <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        
+        <!-- Conexiones para cargar fuentes de Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Repuestos de alta calidad para motocicletas,Motos repuestos,Mejores motores de motocicletas,Comprar motores de arranque,Repuestos confiables para motocicletas,
-        Repuestos originales para Pulsar NS,Repuestos para KTM duke 390,Repuestos originales para dominar 400,R
-        epuestos originales NS 200,Piezas de motores Pulsar 200 NS,Repuestos Kawasaki Originales,Partes de motos originales nuevas,aceite de motor y refrigerante de motor">
-        <meta name="description" content="Adquiera respuestos de motos y partes de lujo, fiabilidad y desempeno garantizado.">
-        <meta name="author" content="Angel David Osma Pamplona">
-        <meta name="robots" content="index">
-
-        <title>Macachi</title>
-
+        <link rel="stylesheet" href="style.css"> <!-- Estilos principales -->
+        <link rel="stylesheet" href="reset.css"> <!-- Reset de estilos por defecto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"> <!-- Estilo de fuente personalizada -->
+        
+        <!-- Metadatos de la página -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividad -->
+        <meta name="keywords" content="Repuestos de alta calidad para motocicletas,..."> <!-- Palabras clave para SEO -->
+        <meta name="description" content="Adquiera repuestos de motos y partes de lujo, fiabilidad y desempeño garantizado."> <!-- Descripción para SEO -->
+        <meta name="author" content="Angel David Osma Pamplona"> <!-- Autor de la página -->
+        <meta name="robots" content="index"> <!-- Instrucciones para los robots de búsqueda -->
+        
+        <title>Macachi</title> <!-- Título de la página -->
     </head>
 
-    <body>
-
-
+    <body class="contactos-prov">
+        <!-- Barra superior con contacto y envío -->
         <div class="top-header flex">
             <div class="left flex">
                 <div class="top_whatsapp">
@@ -40,25 +38,26 @@
             <div class="right flex">
                 <div class="top_envios">
                     <img src="./images/icon-envio.png" alt="carrito de envios">
-                    <span class="envios">Envios a todo colombia</span>
+                    <span class="envios">Envios a todo Colombia</span>
                 </div>
             </div>
         </div>
 
-        <!-- Inicio del header -->
+        <!-- Header de la página (logo y menú) -->
         <header class="header">
             <a class="header_icon" href="./index.html">
-            <img class="header_icon" src="./images/icon.png" alt="Icono logo">
+                <img class="header_icon" src="./images/icon.png" alt="Icono logo">
             </a>
-
+            
+            <!-- Menú de navegación -->
             <img class="header_menu" src="./images/icon-menu.png" alt="menu icon">
             
             <div class="header_logo">
                 <a class="header_logo" href="./index.html"><h1>MACACHI</h1></a>
             </div>
 
+            <!-- Carrito de compras -->
             <div class="container-icon">
-                <div class="row-product">
                 <div class="container-cart-icon">
                     <img class="header_cart" src="./images/icon-cart.png" alt="Icono del carrito de compras">
                     <div class="count-products">
@@ -67,27 +66,18 @@
                 </div>
 
                 <div class="container-cart-products hidden-cart">
-                    <div class="cart-product">
-                        <div class="info-cart-product">
-                            <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">Guias cilindro</p>
-                        </div>
-                        <img class="icon-close" src="./images/icon-close.png" alt="icon close">
+                    <div class="row-product hidden">
+                        <div class="cart-product"></div>
                     </div>
 
                     <div class="cart-total">
                         <button class="botton-wh" onclick="enviarCarritoPorWhatsApp(allProducts, '+573114446963')">Enviar Carrito por WhatsApp</button>
                     </div>
-
-                </div>
                 </div>
             </div>
-
         </header>
-        <!-- Fin del header -->
 
-
-        <!-- Inicio Buscador -->
+        <!-- Buscador en el header -->
         <div class="header_search">
             <form class="search-form">
                 <button class="btn-search">
@@ -96,66 +86,67 @@
                 <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
             </form>
         </div>
-        <!-- Fin Buscador -->
 
+        <!-- Navegación de escritorio -->
+        <div class="navbar-desk">
+            <a class="desk-list" href="./contact.html">Contactenos</a>
+            <a class="desk-list" href="https://wa.me/3114446963?text=Hola%20Macachi" target="_blank">WhatsApp</a>
+            <a class="desk-list" href="https://www.facebook.com/Macachitornillos/">Facebook</a>
+            <a class="desk-list" href="https://www.instagram.com/macachitornillos/">Instagram</a>
+        </div>
 
-    <!-- Inicio del main -->
-    <div class="modal-navbar_background"></div>
-
-    <!-- Menú deslizante (navbar) -->
-    <nav class="modal-navbar">
-        <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
-        <ul class="modal-navbar_items">
-            <li><a class="navbar_links" href="./index.html">Inicio</a></li>
-            <li><a class="navbar_links" href="./contact.html">Contactenos</a></li>
-            <li><a class="navbar_links" href="*">Redes</a></li>
-            <li><a class="navbar_links" href="*">Ubicacion </a></li>
-        </ul>
-    </nav>
+        <!-- Menú deslizante (Navbar móvil) -->
+        <div class="modal-navbar_background"></div>
+        <nav class="modal-navbar">
+            <img class="modal-navbar_close" src="./images/icon-close.png" alt="Cerrar menú">
+            <ul class="modal-navbar_items">
+                <li><a class="navbar_links" href="./index.html">Inicio</a></li>
+                <li><a class="navbar_links" href="./contact.html">Contacto</a></li>
+                <li><a class="navbar_links" href="https://wa.me/3114446963?text=Hola%20Macachi" target="_blank">WhatsApp</a></li>
+                <li><a class="navbar_links" href="https://www.facebook.com/Macachitornillos/">Facebook</a></li>
+                <li><a class="navbar_links" href="https://www.instagram.com/macachitornillos/">Instagram</a></li>
+            </ul>
+        </nav>
 
         <main class="contact">
-            <form>
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
+            <form action="https://formsubmit.co/Macachitornillos@gmail.com" method="POST" autocomplete="off">
+ 
+                <label  class="nombreapellido">Nombre y Apellido</label>
+                <input class="input-padron" type="text" name="name"  required placeholder="Nombre">
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="example@gmail.com">
+                <label class="correoelectronico">Correo Electrónico</label>
+                <input class="input-padron" type="email" name="email"  required placeholder="example@gmail.com">
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="311234567">
+                <label class="telefono">Teléfono</label>
+                <input class="input-padron" type="tel" name="phone"  required placeholder="0000000000">
 
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <label class="mensaje">Mensaje</label>
+                <textarea  class="input-padron" cols="70" rows="10" name="mensaje"  required></textarea>
 
-                <fieldset>
+                <fieldset class="field">
                     <legend id="test">¿Cómo le gustaría que lo contactemos?</legend>
 
-                    <label for="radioemail"><input type="radio" name="contact" value="email" id="radioemail">Email</label>
+                    <label class="radioemail"><input type="radio" name="contact" value="email" id="radioemail">Email</label>
 
-                    <label for="radiotelefono"><input type="radio" name="contact" value="telefono" id="radiotelefono">Teléfono</label>
+                    <label class="radiotelefono"><input type="radio" name="contact" value="telefono" id="radiotelefono">Teléfono</label>
 
-                    <label for="radiowhatsapp"><input type="radio" name="contact" value="whatsapp" id="radiowhatsapp" checked>Whatsapp</label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>¿En cuál horario prefiere ser atendido?</legend>
-                    <select>
-                        <option value="manana">Mañana</option>
-                        <option value="tarde">Tarde</option>
-                        <option value="noche">Noche</option>
-                    </select>
+                    <label class="radiowhatsapp"><input type="radio" name="contact" value="whatsapp" id="radiowhatsapp" checked>Whatsapp</label>
                 </fieldset>
 
                 <table>
-                    <thead>
+                    <thead class="thead">
                         <tr>
                             <th>Día</th>
                             <th>Horario</th>
                         </tr>
                     </thead>
-                        <tbody>
+                        <tbody class="tbody">
                         <tr>
                             <td>Lunes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
                             <td>08h - 20h</td>
                         </tr>
                         <tr>
@@ -163,24 +154,43 @@
                             <td>08h - 20h</td>
                         </tr>
                         <tr>
+                            <td>Jueves</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
                             <td>Viernes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
                             <td>08h - 20h</td>
                         </tr>
                     </tbody>
                 </table>
-
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
-
-                <input type="submit" value="Enviar Formulario" class="enviar">
+                <div class="boton-enviar">
+                <input class="enviar" type="submit" value="Enviar Formulario">
+                </div>
             </form>
 
         </main>
 
-        <footer> 
-            <img src="">
-            <p class="=copyright">© Copyright Macuchi, Tornillos, Clavos y Lujos. - 2024</p> 
-        </footer>
+<!-- Footer de la página -->
+
+    <footer class="footer">
+        <img class="icon_footer" src="./images/icon.png" alt="Logo de Macachi">
+        <p class="copyright">© Copyright Macachi, Tornillos, Clavos y Lujos. - 2024.</p>
+    </footer>
 
     </body>
+
+<!-- Archivos JavaScript -->
+<script src="index.js"></script>
+<script src="carro.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 </html>

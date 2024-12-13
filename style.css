@@ -377,10 +377,6 @@ body {
   background-color: rgb(116, 116, 116);
 }
 
-.product:hover {
-  box-shadow: 0px 1px 20px 0px rgb(255, 255, 255); /* Sombra al pasar el cursor */
-}
-
 .product img {
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -403,6 +399,10 @@ body {
 }
 
 /* Contacto*/
+
+.contactos-prov{
+  background-color: #ffffff;
+}
 
 /* Contacto*/
 
@@ -804,6 +804,10 @@ body {
     height: 100%;
     background-color: rgb(116, 116, 116);
   }
+  
+  .product:hover{
+    box-shadow: 0px 1px 20px 0px rgb(255, 255, 255); /* Sombra al pasar el cursor */
+  }
 
   .product img {
     width: 100%;
@@ -832,8 +836,103 @@ body {
   .cart-pedido {
     width: 20px;
   }
-  
-  /* Contacto*/
 
   /* Contacto*/
+  .contact{
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+
+  .nombreapellido{
+    margin-top: 30px;
+  }
+
+  .input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 30px;
+    width: 50%;
+  }
+
+  .checkbox {
+    margin: 30px 0;
+  }
+
+  #test{
+    margin-bottom: 15px;
+  }
+
+  .field{
+    margin-bottom: 10px;
+  }
+
+  .seleccion{
+    background-color: rgb(216, 216, 216);
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+
+  table {
+    width: 400px;
+  }
+
+  thead {
+    background-color: rgb(116, 116, 116);
+    color: white;
+  }
+
+  .thead th{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px 15px;
+
+  }
+
+  .tbody td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 6px 15px;
+  }
+
+
+  .enviar{
+    padding: 100px;
+  }
+
+  .boton-enviar{
+    margin: 30px 0px;
+    padding-bottom: 50px;
+  }
+
+  .enviar {
+    width: 40%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(116, 116, 116);
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s all;
+    cursor: pointer;
+  }
+
+  .enviar:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 1px 20px 0px rgb(0, 0, 0); /* Sombra al pasar el cursor */
+  }
+  
+  /* Estilo del pie de página */
+  .footer {
+    display: flex;
+    background-color: rgb(116, 116, 116);
+    bottom: 0;
+    width: 100%;
+  }
+  
 }
