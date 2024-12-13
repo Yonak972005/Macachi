@@ -401,16 +401,101 @@ body {
 /* Contacto*/
 
 .contactos-prov{
-  background-color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
-/* Contacto*/
+.contact{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact label{
+  background-color: #000000;
+}
+
+form label, form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: white;
+}
+
+.nombreapellido{
+  margin-top: 30px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 30px;
+  width: 60%;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: #000000;
+}
+
+.checkbox {
+  margin: 30px 0;
+}
+
+#test{
+  margin-bottom: 15px;
+}
+
+.field{
+  margin-bottom: 10px;
+}
+
+.seleccion{
+  background-color: rgb(216, 216, 216);
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+table {
+  width: 300px;
+}
+
+thead {
+  background-color: rgb(177, 20, 20);
+  color: white;
+}
+
+.thead th{
+  border: 1px solid rgb(255, 0, 0);
+  padding: 8px 15px;
+  color: #ffffff;
+
+}
+
+.tbody td{
+  border: 1px solid rgb(255, 0, 0);
+  padding: 6px 15px;
+  color: #ffffff;
+}
+
+.boton-enviar{
+  margin: 30px 0px;
+  padding-bottom: 50px;
+}
+
+.enviar {
+  width: 70%;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(177, 20, 20);
+  border: none;
+  border-radius: 7px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
 
 /* Footer
 -------------------------------------------------- */
 .footer {
-  display: flex;
-  background: rgb(116, 116, 116);      /* Fondo gris */
+  display: none;
 }
 
 .icon_footer {
@@ -885,24 +970,19 @@ body {
   }
 
   thead {
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(177, 20, 20);
     color: white;
   }
 
   .thead th{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
     padding: 8px 15px;
 
   }
 
   .tbody td{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
     padding: 6px 15px;
-  }
-
-
-  .enviar{
-    padding: 100px;
   }
 
   .boton-enviar{
@@ -915,7 +995,7 @@ body {
     padding: 15px;
     font-size: 20px;
     color: white;
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(177, 20, 20);
     border: none;
     border-radius: 7px;
     transition: 0.5s all;
@@ -924,7 +1004,7 @@ body {
 
   .enviar:hover {
     transform: scale(1.1);
-    box-shadow: 0px 1px 20px 0px rgb(0, 0, 0); /* Sombra al pasar el cursor */
+    box-shadow: 0px 1px 20px 0px rgb(255, 255, 255); /* Sombra al pasar el cursor */
   }
   
   /* Estilo del pie de página */
