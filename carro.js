@@ -24,7 +24,7 @@ productsList.addEventListener('click', (e) => {
 
         const infoProduct = {
             quantity: 1,
-            title: product.querySelector('h3').textContent
+            title: product.querySelector('p').textContent
         };
 
         const exits = allProducts.some(product => product.title === infoProduct.title);
