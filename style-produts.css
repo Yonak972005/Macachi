@@ -743,6 +743,7 @@ body {
     z-index: 10; /* Para asegurar que esté por encima de la imagen */
     height: 50% !important;
     background-image: none  !important;
+    transform: none !important;
   }
 
   /* Estilo de las imágenes de los productos */
