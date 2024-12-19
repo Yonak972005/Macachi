@@ -888,6 +888,7 @@ thead {
   .product {
     height: 100%;
     background-color: rgb(116, 116, 116);
+    overflow: hidden;
   }
   
   .product:hover{
@@ -899,6 +900,12 @@ thead {
     border-radius: 10px 10px 0 0;
     padding-left: 0%;
     padding-right: 0%;
+    transition: transform 0.3s ease; /* Transición suave al cambiar de tamaño */
+  }
+
+  .product img:hover {
+    transform: scale(1.3); /* Escalar la imagen a 1.5 veces su tamaño original */
+    background-image: none;
   }
 
   .product-txt {
