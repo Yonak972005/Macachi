@@ -374,13 +374,12 @@ body {
   border: 1px solid #ffffff;            /* Borde rojo */
   margin-bottom: 8%;
   height: auto;
-  background-color: rgb(116, 116, 116);
+  background-color: rgb(255, 255, 255);
 }
 
 .product img {
   width: 100%;
   border-radius: 10px 10px 0 0;
-  background-image: url(images/Marca.png);
   user-select: none;                    /* Deshabilitar selección de imagen */
 }
 
@@ -887,7 +886,7 @@ thead {
 
   .product {
     height: 100%;
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
   
