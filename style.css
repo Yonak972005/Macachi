@@ -330,6 +330,7 @@ body {
   background-position-y: -15px;
   background-position-x: -5px;
   border-radius: 10%;
+  background-color: #ffffff;
 }
 
 .gallery__image-container:hover {
@@ -337,7 +338,7 @@ body {
 }
 
 .gallery__previus{
-  background-color: hsl(0, 100%, 50%);
+  background-color: rgb(115, 115, 115);
   width: 15px;
   height: 15px;
   padding: 9px;
@@ -348,7 +349,7 @@ body {
 }
 
 .gallery__next{
-  background-color: hsl(0, 100%, 50%);
+  background-color: rgb(115, 115, 115);
   width: 15px;
   height: 15px;
   padding: 9px;
@@ -556,7 +557,7 @@ thead {
   }
   
   .header {
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(115, 115, 115);
     height: 40px;
     display: flex;
     align-items: center;
