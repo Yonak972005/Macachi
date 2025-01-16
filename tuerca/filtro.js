@@ -13,23 +13,31 @@ document.addEventListener("keyup", e=>{
     }
 })
 
-// Seleccionamos la imagen con la clase .product
-const productImage = document.querySelector('.product img');
+document.addEventListener("DOMContentLoaded", function() {
+    const products = document.querySelectorAll('.product');
 
-// Seleccionamos todos los divs con la clase .bton_display
-const buttonDisplays = document.querySelectorAll('.bton_display');
+    products.forEach((product) => {
+        const mainImage = product.querySelector('img'); // Imagen principal del producto
+        const displays = product.querySelectorAll('.bton_display'); // Todas las imágenes de medidas dentro del producto
 
-// Añadimos el evento 'click' a la imagen
-productImage.addEventListener('click', function() {
-    // Iteramos sobre todos los divs .bton_display
-    buttonDisplays.forEach(function(buttonDisplay) {
-        // Si el div está oculto, lo mostramos; si está visible, lo ocultamos
-        if (buttonDisplay.style.display === 'none' || buttonDisplay.style.display === '') {
-            buttonDisplay.style.display = 'flex'; // Mostrar el div
-        } else {
-            buttonDisplay.style.display = 'none'; // Ocultar el div
-        }
+        // Función para manejar el clic en la imagen principal
+        mainImage.addEventListener('click', function() {
+            // Alternar visibilidad de todas las imágenes de medidas
+            displays.forEach((display) => {
+                if (display.style.display === 'none' || display.style.display === '') {
+                    display.style.display = 'flex'; // Mostrar la imagen de medidas
+                } else {
+                    display.style.display = 'none'; // Ocultar la imagen de medidas
+                }
+            });
+        });
+
+        // Función para manejar el clic en cualquier imagen de medidas (bton_display) para cerrarla
+        displays.forEach((display) => {
+            display.addEventListener('click', function() {
+                display.style.display = 'none'; // Ocultar la imagen de medidas
+            });
+        });
     });
 });
-
 
