@@ -18,21 +18,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     products.forEach((product) => {
         const mainImage = product.querySelector('img'); // Imagen principal del producto
-        const medidasImage = product.querySelector('.medidas-image'); // Imagen de las medidas
+        const displays = product.querySelectorAll('.bton_display'); // Todas las imágenes de medidas dentro del producto
 
         // Función para manejar el clic en la imagen principal
         mainImage.addEventListener('click', function() {
-            // Alternar visibilidad de la imagen de medidas
-            if (medidasImage.style.display === 'none' || medidasImage.style.display === '') {
-                medidasImage.style.display = 'block'; // Mostrar la imagen de medidas
-            } else {
-                medidasImage.style.display = 'none'; // Ocultar la imagen de medidas
-            }
+            // Alternar visibilidad de todas las imágenes de medidas
+            displays.forEach((display) => {
+                if (display.style.display === 'none' || display.style.display === '') {
+                    display.style.display = 'flex'; // Mostrar la imagen de medidas
+                } else {
+                    display.style.display = 'none'; // Ocultar la imagen de medidas
+                }
+            });
         });
 
-        // Función para manejar el clic en la imagen de medidas para cerrarla
-        medidasImage.addEventListener('click', function() {
-            medidasImage.style.display = 'none'; // Ocultar la imagen de medidas
+        // Función para manejar el clic en cualquier imagen de medidas (bton_display) para cerrarla
+        displays.forEach((display) => {
+            display.addEventListener('click', function() {
+                display.style.display = 'none'; // Ocultar la imagen de medidas
+            });
         });
     });
 });
+
