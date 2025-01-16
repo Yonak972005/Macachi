@@ -1,73 +1,16 @@
+// Seleccionar los elementos del carrito y productos
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
-
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart');
-});
-
-/*------------------*/
-const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
-
-// lista carrito
-const carrito = document.querySelector('.info-cart-product');
+const countProducts = document.querySelector('#contador-productos');
 const productsList = document.querySelector('.product-content');
 
-// variables
-let allProducts = JSON.parse(localStorage.getItem('cart')) || []; // Cargar carrito desde localStorage
+// Recuperar el carrito desde localStorage, o inicializarlo vacío
+let allProducts = JSON.parse(localStorage.getItem('cart')) || [];
 
-const countProducts = document.querySelector('#contador-productos');
-
-productsList.addEventListener('click', (e) => {
-    if (e.target.classList.contains('btn-add-cart')) {
-        const product = e.target.parentElement;
-
-        const infoProduct = {
-            quantity: 1,
-            title: product.querySelector('p').textContent
-        };
-
-        const exits = allProducts.some(product => product.title === infoProduct.title);
-
-        if (exits) {
-            const products = allProducts.map(product => {
-                if (product.title === infoProduct.title) {
-                    product.quantity++;
-                    return product;
-                } else {
-                    return product;
-                }
-            });
-            allProducts = [...products];
-        } else {
-            allProducts = [...allProducts, infoProduct];
-        }
-
-        // Guardar el carrito actualizado en localStorage
-        localStorage.setItem('cart', JSON.stringify(allProducts));
-
-        showHTML();
-    }
-});
-
-rowProduct.addEventListener('click', (e) => {
-    if (e.target.classList.contains('icon-close')) {
-        const product = e.target.parentElement;
-        const title = product.querySelector('p').textContent;
-
-        allProducts = allProducts.filter(product => product.title !== title);
-
-        // Guardar el carrito actualizado en localStorage
-        localStorage.setItem('cart', JSON.stringify(allProducts));
-
-        showHTML();
-    }
-});
-
-// Función mostrar HTML
+// Función para mostrar los productos en el carrito
 const showHTML = () => {
-    // Limpiar HTML
-    rowProduct.innerHTML = '';
+    rowProduct.innerHTML = '';  // Limpiar HTML antes de mostrar los productos
 
     let totalOfProducts = 0;
 
@@ -87,8 +30,66 @@ const showHTML = () => {
         totalOfProducts += product.quantity;
     });
 
-    countProducts.innerText = totalOfProducts;
-}
+    countProducts.innerText = totalOfProducts;  // Actualizar el contador de productos
+};
+
+// Función para manejar la visibilidad del carrito
+btnCart.addEventListener('click', () => {
+    containerCartProducts.classList.toggle('hidden-cart');
+});
+
+// Función para agregar un producto al carrito
+productsList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('btn-add-cart')) {
+        const product = e.target.parentElement; // Obtener el contenedor del producto
+        const infoProduct = {
+            quantity: 1,
+            title: product.querySelector('p').textContent  // Obtener el nombre del producto
+        };
+
+        // Verificar si el producto ya existe en el carrito
+        const exits = allProducts.some(product => product.title === infoProduct.title);
+
+        if (exits) {
+            // Si el producto ya está en el carrito, aumentar la cantidad
+            const products = allProducts.map(product => {
+                if (product.title === infoProduct.title) {
+                    product.quantity++;
+                    return product;
+                } else {
+                    return product;
+                }
+            });
+            allProducts = [...products];
+        } else {
+            // Si el producto no está en el carrito, agregarlo
+            allProducts = [...allProducts, infoProduct];
+        }
+
+        // Guardar el carrito actualizado en localStorage
+        localStorage.setItem('cart', JSON.stringify(allProducts));
+
+        // Mostrar el carrito actualizado
+        showHTML();
+    }
+});
+
+// Función para eliminar un producto del carrito
+rowProduct.addEventListener('click', (e) => {
+    if (e.target.classList.contains('icon-close')) {
+        const product = e.target.parentElement;
+        const title = product.querySelector('p').textContent;
+
+        // Eliminar el producto del carrito
+        allProducts = allProducts.filter(product => product.title !== title);
+
+        // Guardar el carrito actualizado en localStorage
+        localStorage.setItem('cart', JSON.stringify(allProducts));
+
+        // Mostrar el carrito actualizado
+        showHTML();
+    }
+});
 
 // Función para enviar el carrito por WhatsApp
 function enviarCarritoPorWhatsApp(allProducts, numero) {
