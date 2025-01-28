@@ -32,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        // Función para manejar el clic en cualquier imagen de medidas (bton_display) para cerrarla
+        // No hacemos nada en este bloque de código con los clics en los botones
         displays.forEach((display) => {
-            display.addEventListener('click', function() {
-                display.style.display = 'none'; // Ocultar la imagen de medidas
+            display.addEventListener('click', function(event) {
+                // No hacer nada si se hace clic en el botón "Añadir al carrito"
+                if (event.target.closest('.btn-add-cart')) {
+                    return; // No hacer nada si el clic fue en el botón
+                }
             });
         });
     });
 });
-
