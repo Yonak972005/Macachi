@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const id = window.location.hash.substring(1); // Obtiene el id del hash
         const el = document.getElementById(id); // Busca el elemento con ese id
         if (el) {
+
             setTimeout(() => {
                 el.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll suave al producto
                 el.classList.add('highlight-product'); // Añade clase de resaltado
