@@ -365,7 +365,7 @@ body {
 }
 
 .top-header-left span {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -384,8 +384,8 @@ body {
     padding: 6px;
     border-radius: 50%;
     transition: var(--transition-normal);
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
 }
 
 .social-link:hover {
@@ -395,8 +395,8 @@ body {
 }
 
 .social-link svg {
-    width: 14px;
-    height: 14px;
+    width: 25px;
+    height: 25px;
 }
 
 /* Main Header */

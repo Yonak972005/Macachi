@@ -374,3 +374,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// ==========================
+// Scroll hacia arriba (botón Ir arriba)
+// ==========================
+/**
+ * Muestra el botón de ir arriba cuando el usuario hace scroll
+ * Permite volver al inicio de la página con scroll suave
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    const btnArriba = document.getElementById('btn-arriba');
+    if (!btnArriba) return;
+    btnArriba.style.display = 'none';
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+            btnArriba.style.display = 'block';
+        } else {
+            btnArriba.style.display = 'none';
+        }
+    });
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
